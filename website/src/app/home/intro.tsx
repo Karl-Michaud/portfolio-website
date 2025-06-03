@@ -34,7 +34,7 @@ export function Intro() {
                     <DecryptedText
                         text="-> always learning and tinkering with new ideas"
                         animateOn="view"
-                        speed={AnimationSpeed}
+                        speed={AnimationSpeed + 5}
                         maxIterations={10}
                         sequential={true}
                         className={styles.decrypted}
@@ -43,7 +43,7 @@ export function Intro() {
                     <DecryptedText
                         text="-> building scalable apps that solve real problems"
                         animateOn="view"
-                        speed={AnimationSpeed}
+                        speed={AnimationSpeed + 10}
                         maxIterations={10}
                         sequential={true}
                         className={styles.decrypted}
@@ -52,7 +52,7 @@ export function Intro() {
                     <DecryptedText
                         text="-> obsessed with low-level programming, compilers and os"
                         animateOn="view"
-                        speed={AnimationSpeed}
+                        speed={AnimationSpeed + 15}
                         maxIterations={10}
                         sequential={true}
                         className={styles.decrypted}

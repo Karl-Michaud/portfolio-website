@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Link from "next/link";
 
 
 export const metadata: Metadata = {
@@ -17,15 +18,15 @@ export default function RootLayout({
       <body style={{ fontFamily: "var(--font-lucida)" }}>
         <header>
           <nav className="navbar">
-            <a href="#about">about</a>
+            <Link href="/about">about</Link>
             <span>|</span>
-            <a href="#projects">projects</a>
+            <Link href="/projects">projects</Link>
             <span>|</span>
-            <a href="#experience">experience</a>
+            <Link href="/experience">experience</Link>
             <span>|</span>
-            <a href="#contact">contact me</a>
+            <Link href="/contact">contact me</Link>
             <span>|</span>
-            <a href="#my resume">my resume</a>
+            <Link href="/">my resume</Link>
           </nav>
         </header>
         {children}

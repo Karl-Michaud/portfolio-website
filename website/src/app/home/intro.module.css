@@ -53,8 +53,28 @@
     color: var(--foreground);
     opacity: 0.8;
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .decrypted {
     display: inline-block;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.socialLink {
+    color: var(--foreground);
+    opacity: 0.8;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    font-size: 1.5rem;
+}
+
+.socialLink:hover {
+    opacity: 1;
+    transform: translateY(-2px);
 } 

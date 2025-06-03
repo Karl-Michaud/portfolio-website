@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import DecryptedText from "./decrypted_text";
 import styles from './intro.module.css';
 
@@ -57,6 +58,24 @@ const IntroContent = () => {
                 />
             </div>
             <p className={styles.connect}>let's connect!</p>
+            <div className={styles.socialLinks}>
+                <a 
+                    href="https://www.linkedin.com/in/karlmichaud/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={styles.socialLink}
+                >
+                    <FaLinkedin />
+                </a>
+                <a 
+                    href="https://github.com/Karl-Michaud" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={styles.socialLink}
+                >
+                    <FaGithub />
+                </a>
+            </div>
         </div>
     );
 };

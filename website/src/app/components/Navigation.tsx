@@ -26,4 +26,4 @@ export default function Navigation() {
       <Link href="/">my resume</Link>
     </nav>
   );
-} 
+}

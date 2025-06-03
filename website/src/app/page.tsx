@@ -9,6 +9,7 @@ import {
 } from './components/Sections';
 import styles from "./page.module.css";
 import { Intro } from "./home/intro";
+import { About } from "./about/about";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         <Intro />
       </div>
       <div id="about" className={styles.page}>
-        about page
+        <About/>
       </div>
       <div id="projects" className={styles.page}>
         projects page

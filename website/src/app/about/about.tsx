@@ -1,0 +1,270 @@
+"use client";
+
+import styles from "./about.module.css";
+import { useEffect, useState } from 'react';
+import { TypeAnimation } from 'react-type-animation';
+import FadeContent from "../components/FadeContent";
+
+export function AboutContent() {
+  return (
+    <div className={styles.content}>
+      <h1 className={styles.title}>
+          <p className={styles.terminalItem}>{`visitor@terminal.user.dev:~$ `}</p>
+          <TypeAnimation
+            className={styles.terminalItem}
+            sequence={[
+              '',
+              1000,
+              './aboutm',
+              1000,
+              './about-me',
+              2000,
+            ]}
+            cursor={false}
+            repeat={0}
+          />
+      </h1>
+
+      <div className={styles.description}>
+            <FadeContent
+              blur={false}
+              delay={3500}
+              duration={600}
+              easing="easing-out"
+              initialOpacity={0}
+            >
+                👋 hello visitor,
+            </FadeContent>
+            <FadeContent
+              blur={false}
+              delay={3600}
+              duration={600}
+              easing="easing-out"
+              initialOpacity={0}
+            >
+                my name is karl. i'm a third-year computer science and mathematics double major at uoft.
+            </FadeContent>
+            <FadeContent
+              blur={false}
+              delay={3650}
+              duration={600}
+              easing="easing-out"
+              initialOpacity={0}
+            >
+                i like building stuff that solves real problems, whether it's a tool, an app, or something
+            </FadeContent>
+            <FadeContent
+              blur={false}
+              delay={3700}
+              duration={600}
+              easing="easing-out"
+              initialOpacity={0}
+            >
+                weird i came up with for fun.
+            </FadeContent>
+            <p></p>
+            <FadeContent
+              blur={false}
+              delay={3750}
+              duration={600}
+              easing="easing-out"
+              initialOpacity={0}
+            >
+                i'm always tinkering. one week i'm writing C programs that generate ai videos, the next i'm
+            </FadeContent>
+            <FadeContent
+              blur={false}
+              delay={3800}
+              duration={600}
+              easing="easing-out"
+              initialOpacity={0}
+            >
+                building social apps to make campus life smoother. i like projects that feel useful and teach
+            </FadeContent>
+            <FadeContent
+              blur={false}
+              delay={3850}
+              duration={600}
+              easing="easing-out"
+              initialOpacity={0}
+            >
+                me something new.
+            </FadeContent>
+            <p></p>
+            <p></p>
+            
+            <FadeContent
+              blur={false}
+              delay={3900}
+              duration={600}
+              easing="easing-out"
+              initialOpacity={0}
+            >
+              <p>-----------------</p>
+              <p>| what i'm into |</p>
+              <p>-----------------</p>
+                
+            </FadeContent>
+            <FadeContent
+              blur={false}
+              delay={3900}
+              duration={600}
+              easing="easing-out"
+              initialOpacity={0}
+            >
+                {"-> systems programming and low-level development (i love C / assembly way more than i should)"}
+            </FadeContent>
+{/* 
+            <FadeContent
+              blur={false}
+              delay={3900}
+              duration={600}
+              easing="easing-out"
+              initialOpacity={0}
+            >
+                {"-> full-stack development (especially backend work)"}
+            </FadeContent> */}
+
+            <FadeContent
+              blur={false}
+              delay={3900}
+              duration={600}
+              easing="easing-out"
+              initialOpacity={0}
+            >
+                {"-> cybersecurity (especially since ai keeps changing the landscape)"}
+            </FadeContent>
+
+            <FadeContent
+              blur={false}
+              delay={3900}
+              duration={600}
+              easing="easing-out"
+              initialOpacity={0}
+            >
+                {"-> rock climbing and outdoor activities (i want to start mountaneering!)"}
+            </FadeContent>
+
+            <FadeContent
+              blur={false}
+              delay={3900}
+              duration={600}
+              easing="easing-out"
+              initialOpacity={0}
+            >
+                {"-> volunteering whenever i can"}
+            </FadeContent>
+
+
+            <FadeContent
+              blur={false}
+              delay={4000}
+              duration={600}
+              easing="easing-out"
+              initialOpacity={0}
+            >
+                  <div className={styles.table}>
+                  {/* {`
++-----------------------------------------------------------------------------------------+
+| languages:       Python, Java, C, TypeScript, Swift, HTML/CSS, SQL, shell, MIPS Assembly|
+| frameworks:      React, Next.js, SwiftUI, Node.js, Maven, JUnit, Pytest                 |
+| tools/databases: Git / GitHub, MySQL, Firebase, Linux, OpenAI / DeepSeek API, Astroid   |
++-----------------------------------------------------------------------------------------+
+`
+                  } */}
+                  {`
++-----------------------------------------------------------------------------------------+
+| languages:       Python, Java, C, TypeScript, Swift, HTML/CSS, SQL, shell, MIPS Assembly|
++-----------------------------------------------------------------------------------------+
+| frameworks:      React, Next.js, SwiftUI, Node.js, Maven, JUnit, Pytest                 |
++-----------------------------------------------------------------------------------------+
+| tools/databases: Git / GitHub, MySQL, Firebase, Linux, OpenAI / DeepSeek API, Astroid   |
++-----------------------------------------------------------------------------------------+
+
+                  `}
+                  </div>
+            </FadeContent>
+            
+      </div>
+    </div>
+  );
+}
+
+// Code to trigger animation every time the page on screen
+// export function About() {
+//     const [key, setKey] = useState(0);
+//     const [isVisible, setIsVisible] = useState(false);
+
+//     useEffect(() => {
+//         const observer = new IntersectionObserver(
+//             (entries) => {
+//                 entries.forEach((entry) => {
+//                     if (entry.isIntersecting) {
+//                         setKey(prev => prev + 1); // Force remount
+//                         setIsVisible(true);
+//                     } else {
+//                         setIsVisible(false);
+//                     }
+//                 });
+//             },
+//             {
+//                 threshold: 0.1
+//             }
+//         );
+
+//         const container = document.getElementById('about');
+//         if (container) {
+//             observer.observe(container);
+//         }
+
+//         return () => {
+//             if (container) {
+//                 observer.unobserve(container);
+//             }
+//         };
+//     }, []);
+
+//     return (
+//         <div className={styles.container}>
+//             <div key={key}>
+//                 <AboutContent/>
+//             </div>
+//         </div>
+//     );
+// }
+export function About() {
+  const [key, setKey] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          setKey(prev => prev + 1);       // Trigger animation
+          setHasAnimated(true);           // Prevent future triggers
+          observer.disconnect();          // Optional: stop observing to save resources
+        }
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    const container = document.getElementById('about');
+    if (container) {
+      observer.observe(container);
+    }
+
+    return () => {
+      observer.disconnect();  // Clean up
+    };
+  }, [hasAnimated]);
+
+  return (
+    <div className={styles.container} id="about">
+      <div key={key}>
+        <AboutContent />
+      </div>
+    </div>
+  );
+}

@@ -52,6 +52,7 @@ export default function DecryptedText({
     const [revealedIndices, setRevealedIndices] = useState<Set<number>>(new Set())
     const [hasAnimated, setHasAnimated] = useState<boolean>(false)
     const containerRef = useRef<HTMLSpanElement>(null)
+    const isVisible = useRef<boolean>(false)
 
     useEffect(() => {
         let interval: NodeJS.Timeout;
@@ -181,9 +182,14 @@ export default function DecryptedText({
 
         const observerCallback = (entries: IntersectionObserverEntry[]) => {
             entries.forEach((entry) => {
-                if (entry.isIntersecting && !hasAnimated) {
-                    setIsHovering(true)
-                    setHasAnimated(true)
+                if (entry.isIntersecting) {
+                    if (!isVisible.current) {
+                        setHasAnimated(false)
+                        setIsHovering(true)
+                        isVisible.current = true
+                    }
+                } else {
+                    isVisible.current = false
                 }
             })
         }
@@ -205,7 +211,7 @@ export default function DecryptedText({
                 observer.unobserve(currentRef)
             }
         }
-    }, [animateOn, hasAnimated])
+    }, [animateOn])
 
     const hoverProps =
         animateOn === 'hover'

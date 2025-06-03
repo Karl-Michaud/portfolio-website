@@ -1,6 +1,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-lucida: "Lucida Sans Typewriter", "Courier New", Courier, monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,4 +40,36 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  margin-top: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--foreground); /* Or set your custom color */
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar span {
+  color: var(--foreground);
+  opacity: 0.5;
 }

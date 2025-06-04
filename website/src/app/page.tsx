@@ -10,18 +10,19 @@ import {
 import styles from "./page.module.css";
 import { Intro } from "./home/intro";
 import { About } from "./about/about";
+import { Projects } from "./projects/projects";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <div id="home" className={styles.page}>
-        <Intro />
+        <Intro/>
       </div>
       <div id="about" className={styles.page}>
         <About/>
       </div>
       <div id="projects" className={styles.page}>
-        projects page
+        <Projects/>
       </div>
       <div id="experience" className={styles.page}>
         experience page

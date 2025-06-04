@@ -15,8 +15,6 @@ export function AboutContent() {
             sequence={[
               '',
               1000,
-              './aboutm',
-              1000,
               './about-me',
               2000,
             ]}
@@ -28,7 +26,7 @@ export function AboutContent() {
       <div className={styles.description}>
             <FadeContent
               blur={false}
-              delay={3500}
+              delay={2200}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -37,7 +35,7 @@ export function AboutContent() {
             </FadeContent>
             <FadeContent
               blur={false}
-              delay={3600}
+              delay={2250}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -46,7 +44,7 @@ export function AboutContent() {
             </FadeContent>
             <FadeContent
               blur={false}
-              delay={3650}
+              delay={2300}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -55,7 +53,7 @@ export function AboutContent() {
             </FadeContent>
             <FadeContent
               blur={false}
-              delay={3700}
+              delay={2350}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -65,7 +63,7 @@ export function AboutContent() {
             <p></p>
             <FadeContent
               blur={false}
-              delay={3750}
+              delay={2400}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -74,7 +72,7 @@ export function AboutContent() {
             </FadeContent>
             <FadeContent
               blur={false}
-              delay={3800}
+              delay={2450}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -83,7 +81,7 @@ export function AboutContent() {
             </FadeContent>
             <FadeContent
               blur={false}
-              delay={3850}
+              delay={2500}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -95,19 +93,19 @@ export function AboutContent() {
             
             <FadeContent
               blur={false}
-              delay={3900}
+              delay={2550}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
             >
-              <p>-----------------</p>
+              <p>+---------------+</p>
               <p>| what i'm into |</p>
-              <p>-----------------</p>
+              <p>+---------------+</p>
                 
             </FadeContent>
             <FadeContent
               blur={false}
-              delay={3900}
+              delay={2600}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -127,7 +125,7 @@ export function AboutContent() {
 
             <FadeContent
               blur={false}
-              delay={3900}
+              delay={2600}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -137,7 +135,7 @@ export function AboutContent() {
 
             <FadeContent
               blur={false}
-              delay={3900}
+              delay={2600}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -147,7 +145,7 @@ export function AboutContent() {
 
             <FadeContent
               blur={false}
-              delay={3900}
+              delay={2600}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -158,7 +156,7 @@ export function AboutContent() {
 
             <FadeContent
               blur={false}
-              delay={4000}
+              delay={2650}
               duration={600}
               easing="easing-out"
               initialOpacity={0}

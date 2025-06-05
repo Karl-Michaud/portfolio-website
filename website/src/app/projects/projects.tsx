@@ -203,7 +203,7 @@ export function ProjectsContent() {
                   imageAlt="ai-video-generator preview"
                   stack="C, Python"
                   summary="ai-video-generator project"
-                  githubUrl=""
+                  githubUrl="https://github.com/Karl-Michaud/ai-video-generator"
                   imageHeight={200}
                   imageWidth={350}
                 />
@@ -247,7 +247,7 @@ export function ProjectsContent() {
                   imageAlt="keycard-security-system preview"
                   stack="Python, HTML/CSS, JavaScript, MySQL, Raspberry Pi"
                   summary="keycard-security-system project"
-                  githubUrl=""
+                  githubUrl="https://github.com/Karl-Michaud/NFC-reader"
                   imageHeight={200}
                   imageWidth={350}
                 />
@@ -264,7 +264,15 @@ export function ProjectsContent() {
               initialOpacity={0}
             >
               <div className={styles.height}>
-                portfolio project
+                  <ProjectCard 
+                  imageSrc="/images/portfolio"
+                  imageAlt="portfolio preview"
+                  stack="React.js, Node.js, TypeScript, CSS"
+                  summary="portfolio project"
+                  githubUrl="https://github.com/Karl-Michaud/portfolio-website"
+                  imageHeight={200}
+                  imageWidth={350}
+                />
               </div>
             </FadeContent>
           }
@@ -298,7 +306,15 @@ export function ProjectsContent() {
               initialOpacity={0}
             >
               <div className={styles.height}>
-                talk-to-a-club project
+                <ProjectCard 
+                  imageSrc="/images/talk-to-a-club"
+                  imageAlt="talk to a club preview"
+                  stack="Java, JUnit, Maven, Firebase"
+                  summary="portfolio project"
+                  githubUrl="https://github.com/Karl-Michaud/Talk-To-a-Club"
+                  imageHeight={200}
+                  imageWidth={350}
+                />
               </div>
             </FadeContent>
           }

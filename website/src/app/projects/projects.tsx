@@ -35,6 +35,7 @@ export function ProjectsContent() {
               'ls projects/',
               2000,
             ]}
+            speed={65}
             cursor={false}
             repeat={0}
           />
@@ -42,7 +43,7 @@ export function ProjectsContent() {
       <div className={styles.description}>
             <FadeContent
               blur={false}
-              delay={2200}
+              delay={1800}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -61,7 +62,7 @@ export function ProjectsContent() {
       </div>
       <FadeContent
               blur={false}
-              delay={2200}
+              delay={1800}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -72,10 +73,11 @@ export function ProjectsContent() {
                   className={styles.terminalItem}
                   sequence={[
                     '',
-                    2700,
+                    2500, // 2700
                     'cat instructions.txt',
-                    2000,
+                    1000,
                   ]}
+                  speed={70}
                   cursor={false}
                   repeat={0}
                 />
@@ -84,17 +86,17 @@ export function ProjectsContent() {
       <div className={styles.description}>
               <FadeContent
               blur={false}
-              delay={4200}
+              delay={3500}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
             >
-              Click on project you wish to view.
+              click on project you wish to view. any questions? ask me!
             </FadeContent>
       </div>
       <FadeContent
               blur={false}
-              delay={4200}
+              delay={3500}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -120,8 +122,9 @@ export function ProjectsContent() {
                     className={styles.terminalItem}
                     sequence={[
                       './ai-video-generator',
-                      2300,
+                      100,
                     ]}
+                    speed={75}
                     cursor={false}
                     repeat={0}
                   />
@@ -133,6 +136,7 @@ export function ProjectsContent() {
                       './dr-mario-in-assembly',
                       2300,
                     ]}
+                    speed={75}
                     cursor={false}
                     repeat={0}
                   />
@@ -144,6 +148,7 @@ export function ProjectsContent() {
                       './keycard-security-system',
                       2300,
                     ]}
+                    speed={78}
                     cursor={false}
                     repeat={0}
                   />
@@ -155,6 +160,7 @@ export function ProjectsContent() {
                       './portfolio',
                       2300,
                     ]}
+                    speed={70}
                     cursor={false}
                     repeat={0}
                   />
@@ -166,6 +172,7 @@ export function ProjectsContent() {
                       './recyclobot',
                       2300,
                     ]}
+                    speed={70}
                     cursor={false}
                     repeat={0}
                   />
@@ -177,6 +184,7 @@ export function ProjectsContent() {
                       './talk-to-a-club',
                       2300,
                     ]}
+                    speed={75}
                     cursor={false}
                     repeat={0}
                   />
@@ -192,20 +200,20 @@ export function ProjectsContent() {
           {projectShow[0] && animationNotInProgress && 
               <FadeContent
               blur={false}
-              delay={1470}
+              delay={690}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
             >
               <div className={styles.height}>
               <ProjectCard 
-                  imageSrc="/images/video-generator.jpg"
+                  imageSrc="/images/ai-video-generator.png"
                   imageAlt="ai-video-generator preview"
                   stack="C, Python"
-                  summary="ai-video-generator project"
+                  summary="Turn any idea into a short-form content video using AI that generates a script, voiceover, video, and subtitles automatically."
                   githubUrl="https://github.com/Karl-Michaud/ai-video-generator"
-                  imageHeight={200}
-                  imageWidth={350}
+                  imageHeight={250}
+                  imageWidth={370}
                 />
               </div>
             </FadeContent>
@@ -213,7 +221,7 @@ export function ProjectsContent() {
           {projectShow[1] && animationNotInProgress && 
               <FadeContent
               blur={false}
-              delay={1520}
+              delay={725}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -223,7 +231,7 @@ export function ProjectsContent() {
                   imageSrc="/images/drmario.jpg"
                   imageAlt="Dr Mario preview"
                   stack="MIPS Assembly"
-                  summary="remake of dr. mario game built purely with Mips Assembly language."
+                  summary="Remake of Dr. Mario game built purely with Mips Assembly language."
                   githubUrl="https://github.com/KabirK-05/Dr.-Mario-CSC258"
                   imageHeight={200}
                   imageWidth={350}
@@ -236,19 +244,19 @@ export function ProjectsContent() {
           {projectShow[2] && animationNotInProgress && 
               <FadeContent
               blur={false}
-              delay={1750}
+              delay={725}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
             >
               <div className={styles.height}>
               <ProjectCard 
-                  imageSrc="/images/keycard.jpg"
+                  imageSrc="/images/nfc.png"
                   imageAlt="keycard-security-system preview"
                   stack="Python, HTML/CSS, JavaScript, MySQL, Raspberry Pi"
-                  summary="keycard-security-system project"
+                  summary="Led the development of a keycard system to raise awareness about school security, with remote user management through a custom web portal."
                   githubUrl="https://github.com/Karl-Michaud/NFC-reader"
-                  imageHeight={200}
+                  imageHeight={250}
                   imageWidth={350}
                 />
                 
@@ -258,17 +266,17 @@ export function ProjectsContent() {
           {projectShow[3] && animationNotInProgress && 
               <FadeContent
               blur={false}
-              delay={950}
+              delay={550}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
             >
               <div className={styles.height}>
                   <ProjectCard 
-                  imageSrc="/images/portfolio"
+                  imageSrc="/images/portfolio.png"
                   imageAlt="portfolio preview"
-                  stack="React.js, Node.js, TypeScript, CSS"
-                  summary="portfolio project"
+                  stack="React.js, Next.js, TypeScript, CSS"
+                  summary="Built this portfolio from scratch. You're on it!"
                   githubUrl="https://github.com/Karl-Michaud/portfolio-website"
                   imageHeight={200}
                   imageWidth={350}
@@ -279,7 +287,7 @@ export function ProjectsContent() {
           {projectShow[4] && animationNotInProgress && 
               <FadeContent
               blur={false}
-              delay={970}
+              delay={550}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -289,7 +297,7 @@ export function ProjectsContent() {
                   imageSrc="/images/recyclobot.jpg"
                   imageAlt="Recyclobot preview"
                   stack="Swift, SwifUI, Python, Arduino, Firebase, OpenAi"
-                  summary="smart trash bin and ios app built at deltahacks 11 to automatically sort waste and encourage eco-friendly habits."
+                  summary="Smart trash bin and iOS app built at Deltahacks 11 to automatically sort waste and promote eco-friendly habits."
                   githubUrl="https://github.com/KabirK-05/DeltaHacks2025iOS"
                   imageHeight={250}
                   imageWidth={310}
@@ -300,17 +308,17 @@ export function ProjectsContent() {
           {projectShow[5] && animationNotInProgress && 
               <FadeContent
               blur={false}
-              delay={1250}
+              delay={607}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
             >
               <div className={styles.height}>
                 <ProjectCard 
-                  imageSrc="/images/talk-to-a-club"
+                  imageSrc="/images/talk-to-a-club.jpg"
                   imageAlt="talk to a club preview"
                   stack="Java, JUnit, Maven, Firebase"
-                  summary="portfolio project"
+                  summary="Social app built to simplify finding, joining, and engaging with university clubs. Includes customizable club pages and a personalized feed for student users."
                   githubUrl="https://github.com/Karl-Michaud/Talk-To-a-Club"
                   imageHeight={200}
                   imageWidth={350}

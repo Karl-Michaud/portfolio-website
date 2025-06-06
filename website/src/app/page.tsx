@@ -11,6 +11,7 @@ import styles from "./page.module.css";
 import { Intro } from "./home/intro";
 import { About } from "./about/about";
 import { Projects } from "./projects/projects";
+import { Experience } from "./experience/experience";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
         <Projects/>
       </div>
       <div id="experience" className={styles.page}>
-        experience page
+        <Experience/>
       </div>
       <div id="contact" className={styles.page}>
         contact page

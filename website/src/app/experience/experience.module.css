@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh;
+  padding: 2rem; */
+  background-color: var(--background);
+  margin-top: 33rem;
+  margin-right: 10rem;
+
+}
+
+.terminalItem {
+  flex-direction: row;
+}
+
+.terminalItem p {
+  flex-direction: row;
+  position: fixed;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.content {
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* .description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+} */
+ .description {
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.5rem; */
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  font-family: var(--font-lucida);
+  white-space: pre-wrap; /* preserve spacing and line breaks */
+  color: white; /* or your default text color */
+}
+
+.jobTitle {
+  color: #4CAF50; /* green for job titles */
+  font-weight: 500;
+}
+
+.asciiBlock {
+  font-family: monospace;
+  white-space: pre;
+  font-size: 1.1rem;
+  color: var(--textColor); /* Optional: match surrounding text */
+  margin-top: 1rem;
+}
+
+.table {
+  white-space: pre;
+  display: inline-block;  /* shrinks container to content width */
+  text-align: left;
+}
+
+.greenLine {
+  color: #4CAF50;
+  font-weight: 500;
+}

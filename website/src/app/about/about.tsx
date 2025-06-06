@@ -22,7 +22,6 @@ export function AboutContent() {
             repeat={0}
           />
       </h1>
-
       <div className={styles.description}>
             <FadeContent
               blur={false}

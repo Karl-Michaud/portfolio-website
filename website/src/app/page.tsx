@@ -12,6 +12,7 @@ import { Intro } from "./home/intro";
 import { About } from "./about/about";
 import { Projects } from "./projects/projects";
 import { Experience } from "./experience/experience";
+import { Contact } from "./contact/contact";
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
         <Experience/>
       </div>
       <div id="contact" className={styles.page}>
-        contact page
+        <Contact/>
       </div>
     </div>
   );

@@ -24,13 +24,6 @@ export default function ExperienceContent() {
           />
       </h1>
       <div className={styles.description}>
-            <FadeContent
-              blur={false}
-              delay={1800}
-              duration={600}
-              easing="easing-out"
-              initialOpacity={0}
-            >
                 <div className={styles.table}>
 {/* {`experience/
 │ 
@@ -59,99 +52,137 @@ export default function ExperienceContent() {
 │   ├── Coordinated prep and materials with kitchen team
 │   └── Maintained safety in a fast-paced, hazard-prone environment
 `}                   */}
-<div className={styles.description}>
-  <span>
-    experience/
-  </span>
-  │
-  <span>
-    ├──{" "}
-    <span className={styles.jobTitle}>
-       software developer (Department of Computer Science, University of Toronto)
-    </span>
-  </span>
-  <span>
-    │   ├── [May 2025 - Present]
-  </span>
-  <span>
-    │   └── Designing and maintaining core features of PythonTA,
-  </span>
-  <span>
-    │       a static analysis tool used by 3900+ students annually
-  </span>
-  <span>
-    │       to improve coding practices in intro Python courses
-  </span>
-  │
-  <span>
-    ├──{" "}
-    <span className={styles.jobTitle}>
-       event coordinator (STEP UofT Student Club)
-    </span>
-  </span>
-  <span>
-    │   ├── [Aug 2024 - May 2025]
-  </span>
-  <span>
-    │   ├── Organized events for 15+ attendees while balancing full-time studies
-  </span>
-  <span>
-    │   ├── Forecasted attendance and resolved logistical issues
-  </span>
-  <span>
-    │   ├── Onboarded 25+ new members through clear communication
-  </span>
-  <span>
-    │   └── Provided real-time support to ensure smooth event flow
-  </span>
-  │
-  <span>
-    ├──{" "}
-    
-    <span className={styles.jobTitle}>
-       IT intern (Gustave Roussy Cancer Research Hospital)
-    </span>
-  </span>
-  <span>
-    │   ├── [May 2021]
-  </span>
-  <span>
-    │   ├── Specialized in IT and emergency departments at Gustave Roussy hospital
-  </span>
-  <span>
-    │   ├── Shadowed mentor in server maintenance and support tasks
-  </span>
-  <span>
-    │   └── Diagnosed and resolved hardware/software/network issues for staff
-  </span>
-  │
-  <span>
-    ├──{" "}
-    
-    <span className={styles.jobTitle}>
-       teaching assistant (L'Atelier des Chefs)
-    </span>
-  </span>
-  <span>
-    │   ├── [May 2020]
-  </span>
-  <span>
-    │   ├── Helped deliver cooking classes for 10+ students
-  </span>
-  <span>
-    │   ├── Coordinated prep and materials with kitchen team
-  </span>
-  <span>
-    │   └── Maintained safety in a fast-paced, hazard-prone environment
-  </span>
-</div>
+                  
+                      <FadeContent
+                      blur={false}
+                      delay={1800}
+                      duration={600}
+                      easing="easing-out"
+                      initialOpacity={0}
+                    >
+                    <div className={styles.description}>
+                      <span>
+                        experience/
+                      </span>
+                      │
+                      <span>
+                        ├──{" "}
+                        <span className={styles.jobTitle}>
+                          software developer (Department of Computer Science, University of Toronto)
+                        </span>
+                      </span>
+                      <span>
+                        │   ├── [May 2025 - Present]
+                      </span>
+                      <span>
+                        │   └── Designing and maintaining core features of PythonTA,
+                      </span>
+                      <span>
+                        │       a static analysis tool used by 3900+ students annually
+                      </span>
+                      <span>
+                        │       to improve coding practices in intro Python courses
+                      </span>
+                      │
+                      </div>
+                    </FadeContent>
+                    <FadeContent
+                      blur={false}
+                      delay={1850}
+                      duration={600}
+                      easing="easing-out"
+                      initialOpacity={0}
+                    >
+                      <div className={styles.description}>
+                      <span>
+                        ├──{" "}
+                        <span className={styles.jobTitle}>
+                          event coordinator (STEP UofT Student Club)
+                        </span>
+                      </span>
+                      <span>
+                        │   ├── [Aug 2024 - May 2025]
+                      </span>
+                      <span>
+                        │   ├── Organized events for 15+ attendees while balancing full-time studies
+                      </span>
+                      <span>
+                        │   ├── Forecasted attendance and resolved logistical issues
+                      </span>
+                      <span>
+                        │   ├── Onboarded 25+ new members through clear communication
+                      </span>
+                      <span>
+                        │   └── Provided real-time support to ensure smooth event flow
+                      </span>
+                      │
+                      </div>
+                    </FadeContent>
+                    <FadeContent
+                      blur={false}
+                      delay={1900}
+                      duration={600}
+                      easing="easing-out"
+                      initialOpacity={0}
+                    >
+                      <div className={styles.description}>
+                      <span>
+                        ├──{" "}
+                        
+                        <span className={styles.jobTitle}>
+                          IT intern (Gustave Roussy Cancer Research Hospital)
+                        </span>
+                      </span>
+                      <span>
+                        │   ├── [May 2021]
+                      </span>
+                      <span>
+                        │   ├── Specialized in IT and emergency departments at Gustave Roussy hospital
+                      </span>
+                      <span>
+                        │   ├── Shadowed mentor in server maintenance and support tasks
+                      </span>
+                      <span>
+                        │   └── Diagnosed and resolved hardware/software/network issues for staff
+                      </span>
+                      │
+                      </div>
+                    </FadeContent>
+                    <FadeContent
+                      blur={false}
+                      delay={1950}
+                      duration={600}
+                      easing="easing-out"
+                      initialOpacity={0}
+                    >
+                      <div className={styles.description}>
+                      <span>
+                        ├──{" "}
+                        
+                        <span className={styles.jobTitle}>
+                          teaching assistant (L'Atelier des Chefs)
+                        </span>
+                      </span>
+                      <span>
+                        │   ├── [May 2020]
+                      </span>
+                      <span>
+                        │   ├── Helped deliver cooking classes for 10+ students
+                      </span>
+                      <span>
+                        │   ├── Coordinated prep and materials with kitchen team
+                      </span>
+                      <span>
+                        │   └── Maintained safety in a fast-paced, hazard-prone environment
+                      </span>
+                      </div>
+                    </FadeContent>
+                  </div>
 
                 </div>
-            </FadeContent>
             
       </div>
-    </div>
-    
+   
   );
 }
 

@@ -169,16 +169,27 @@ export function AboutContent() {
 +-----------------------------------------------------------------------------------------+
 `
                   } */}
-                  {`
+                  {/* {`
 +-----------------------------------------------------------------------------------------+
-| languages:       Python, Java, C, TypeScript, Swift, HTML/CSS, SQL, shell, MIPS Assembly|
+| languages:       Python, Java, C, TypeScript, Swift, HTML/CSS, SQL, Shell, MIPS Assembly|
 +-----------------------------------------------------------------------------------------+
-| frameworks:      React, Next.js, SwiftUI, Node.js, Maven, JUnit, Pytest                 |
+| frameworks:      React.js, Next.js, SwiftUI, Node.js, Maven, JUnit, Pytest              |
 +-----------------------------------------------------------------------------------------+
 | tools/databases: Git / GitHub, MySQL, Firebase, Linux, OpenAI / DeepSeek API, Astroid   |
 +-----------------------------------------------------------------------------------------+
 
-                  `}
+                  `} */}
+{`
++------------------------------------------------------------------------------------------+
+| languages:       Python, Java, C, TypeScript, Swift, HTML/CSS, SQL, Shell, MIPS Assembly |
++------------------------------------------------------------------------------------------+
+| libraries:       React.js, Pytest, JUnit, Astroid                                        |
++------------------------------------------------------------------------------------------+
+| frameworks:      Node.js, Next.js, SwiftUI, Maven                                        |
++------------------------------------------------------------------------------------------+
+| tools/databases: Git / GitHub, MySQL, Firebase, Linux, OpenAI / DeepSeek API             |
++------------------------------------------------------------------------------------------+
+`}
                   </div>
             </FadeContent>
             

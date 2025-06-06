@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import DecryptedText from "./decrypted_text";
 import styles from './intro.module.css';
 
@@ -74,6 +74,12 @@ const IntroContent = () => {
                     className={styles.socialLink}
                 >
                     <FaGithub />
+                </a>
+                <a 
+                    href="mailto:karl.michaud@mail.utoronto.ca" 
+                    className={styles.socialLink}
+                >
+                    <FaEnvelope />
                 </a>
             </div>
         </div>

@@ -74,3 +74,40 @@
   color: #4CAF50;
   font-weight: 500;
 }
+
+/* Mobile-friendly experience section */
+@media (max-width: 768px) {
+  .container {
+    margin-top: 15rem;
+    margin-right: 3rem;
+  }
+  .title {
+    font-size: 1.1rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 8rem;
+    margin-right: 9.5rem;
+    padding: 1rem;
+    min-width: 800px;
+  }
+  .content {
+    max-width: 1000px;
+    width: 100%;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .description {
+    font-size: 0.9rem;
+  }
+  .asciiBlock {
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+  }
+}

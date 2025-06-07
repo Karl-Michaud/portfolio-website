@@ -67,3 +67,49 @@
 .githubLink:hover svg {
   transform: rotate(3deg);
 }
+
+/* Mobile-friendly project cards */
+@media (max-width: 768px) {
+  .terminalBox {
+    max-width: 90vw;
+    font-size: 0.9rem;
+  }
+  .projectImage {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminalBox {
+    padding: 0.6rem;
+    max-width: 95vw;
+    font-size: 0.85rem;
+    line-height: 1.2;
+    overflow-x: auto;
+  }
+  .projectImage {
+    border-width: 1px;
+    max-width: 100%;
+    height: auto;
+  }
+  .stack {
+    font-size: 0.75rem;
+    margin: 0 0 0.4rem 0;
+  }
+  .summary {
+    font-size: 0.85rem;
+    margin: 0 0 0.6rem 0;
+    line-height: 1.3;
+  }
+  .githubLink {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+    display: inline-block;
+    word-break: break-word;
+  }
+  .githubLink svg {
+    width: 14px;
+    height: 14px;
+  }
+}

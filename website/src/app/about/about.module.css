@@ -6,7 +6,7 @@
   min-height: 70vh;
   padding: 2rem;
   background-color: var(--background);
-  margin-top: 40rem;
+  margin-top: 41.5rem;
   /* margin-right: 28.5rem; */
 }
 
@@ -49,4 +49,47 @@
   white-space: pre;
   display: inline-block;  /* shrinks container to content width */
   text-align: left;
+}
+
+/* Mobile-friendly about section */
+@media (max-width: 768px) {
+  .container {
+    margin-top: 20rem;
+    padding: 1.5rem;
+  }
+  .title {
+    font-size: 1.1rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 10rem;
+    padding: 1rem;
+    min-width: 800px;
+  }
+  .content {
+    max-width: 1000px;
+    width: 100%;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .description {
+    font-size: 0.9rem;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    margin-top: 0.8rem;
+  }
+  .asciiBlock {
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+  }
+  .table {
+    font-size: 0.8rem;
+    max-width: 100%;
+  }
 }

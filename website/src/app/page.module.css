@@ -135,7 +135,14 @@ a.secondary {
 }
 
 @media (max-width: 600px) {
+  .container {
+    scroll-snap-type: none !important;
+    margin-top: 10rem;
+    padding-top: 4rem;
+  }
   .page {
+    scroll-snap-align: unset !important;
+    scroll-snap-stop: unset !important;
     padding: 32px;
     padding-bottom: 80px;
   }
@@ -166,6 +173,31 @@ a.secondary {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    scroll-snap-type: none !important;
+    margin-top: 10rem;
+    padding-top: 4rem;
+  }
+  .page {
+    scroll-snap-align: unset !important;
+    scroll-snap-stop: unset !important;
+    padding: 16px;
+    gap: 32px;
+    padding-bottom: 40px;
+  }
+
+  .main {
+    gap: 16px;
+  }
+
+  .ctas a {
+    font-size: 12px;
+    height: 36px;
+    padding: 0 12px;
   }
 }
 

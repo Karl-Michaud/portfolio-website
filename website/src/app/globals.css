@@ -17,6 +17,15 @@ body {
   overflow-x: hidden;
 }
 
+/* Allow horizontal scrolling on mobile */
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: auto;
+    max-width: none;
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -75,4 +84,24 @@ a {
 .navbar span {
   color: var(--foreground);
   opacity: 0.5;
+}
+
+/* Mobile-friendly navbar - readable and tappable */
+@media (max-width: 768px) {
+  .navbar {
+    gap: 1.5rem;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    gap: 1rem;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    padding: 0 0.5rem;
+  }
 }

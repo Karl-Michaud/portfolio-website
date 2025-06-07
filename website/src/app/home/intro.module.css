@@ -77,4 +77,51 @@
 .socialLink:hover {
     opacity: 1;
     transform: translateY(-2px);
+}
+
+/* Mobile-friendly intro - readable and fits screen */
+@media (max-width: 768px) {
+  .container {
+    margin-top: 15rem;
+    margin-right: 5rem;
+    padding: 1.5rem;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 8rem;
+    margin-right: 20rem;
+    padding: 1rem;
+    min-width: 800px;
+  }
+  .content {
+    max-width: 800px;
+    width: 100%;
+  }
+  .title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .description {
+    font-size: 0.9rem;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+  }
+  .connect {
+    font-size: 0.85rem;
+  }
+  .socialLinks {
+    gap: 1rem;
+  }
+  .socialLink {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
 } 

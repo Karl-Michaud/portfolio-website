@@ -112,3 +112,21 @@
   width: 250px;               /* or any size you want */
   height: auto;    
 }
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: none;
+  }
+  
+  .description {
+    max-width: 100%;
+    width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    /* font-size: 0.9rem; */
+  }
+}

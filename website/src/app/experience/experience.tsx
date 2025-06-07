@@ -68,7 +68,7 @@ export default function ExperienceContent() {
                       <span>
                         ├──{" "}
                         <span className={styles.jobTitle}>
-                          software developer (Department of Computer Science, University of Toronto)
+                          software developer (Department of Computer Science, UofT)
                         </span>
                       </span>
                       <span>
@@ -137,7 +137,7 @@ export default function ExperienceContent() {
                         │   ├── [May 2021]
                       </span>
                       <span>
-                        │   ├── Specialized in IT and emergency departments at Gustave Roussy hospital
+                        │   ├── Specialized in IT and emergency departments at Gustave Roussy
                       </span>
                       <span>
                         │   ├── Shadowed mentor in server maintenance and support tasks

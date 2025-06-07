@@ -50,3 +50,28 @@
   display: inline-block;  /* shrinks container to content width */
   text-align: left;
 }
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 67rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: none;
+  }
+  
+  .description {
+    max-width: 100%;
+    width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .table {
+    white-space: pre;
+    display: inline-block;  /* shrinks container to content width */
+    text-align: left;
+    font-size: 0.75rem;
+    margin-right: 1.5rem;
+  }
+}

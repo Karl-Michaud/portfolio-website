@@ -134,6 +134,23 @@ a.secondary {
   }
 }
 
+@media (max-width: 480px) {
+  .container {
+    overflow-x: hidden;
+    width: 100vw;
+  }
+  
+  .page {
+    transform: scale(0.5);
+    transform-origin: top left;
+    width: 200vw;
+    height: 200vh;
+    margin: 0;
+    margin-top: 60px;
+    padding: 40px;
+  }
+}
+
 @media (max-width: 600px) {
   .page {
     padding: 32px;

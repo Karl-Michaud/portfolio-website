@@ -58,7 +58,7 @@ Options:
                 <a href="mailto:karl.michaud@mail.utoronto.ca" className={styles.option}>
                   --email
                 </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;Show email address&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;Email address&nbsp;
                 <a href="mailto:karl.michaud@mail.utoronto.ca" className={styles.meta}>
                   [karl.michaud@mail.utoronto.ca]
                 </a>
@@ -73,7 +73,7 @@ Options:
                 >
                   --linkedin
                 </a>
-                &nbsp;&nbsp;Open LinkedIn profile&nbsp;
+                &nbsp;&nbsp;LinkedIn profile&nbsp;
                 <a
                   href="https://linkedin.com/in/karlmichaud"
                   target="_blank"

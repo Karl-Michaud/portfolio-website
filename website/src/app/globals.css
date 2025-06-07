@@ -76,3 +76,15 @@ a {
   color: var(--foreground);
   opacity: 0.5;
 }
+
+@media (max-width: 480px) {
+  .navbar {
+    font-size: 0.8rem;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 1.2;
+    padding: 0 1rem;
+  }
+}

@@ -74,3 +74,21 @@
   color: #4CAF50;
   font-weight: 500;
 }
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 53rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: none;
+  }
+  
+  .description {
+    max-width: 100%;
+    width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 0.98rem;
+  }
+}

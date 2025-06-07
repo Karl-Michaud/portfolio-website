@@ -3,7 +3,7 @@ import Navigation from './components/Navigation'
 
 export const metadata = {
   title: "Karl's Portfolio",
-  description: "Welcome to my portfolio!",
+  description: "Hey, I'm Karl. Welcome to my portfolio! I love tackling real-world problems through computers and software. Check out some of my stuff!",
 }
 
 export default function RootLayout({

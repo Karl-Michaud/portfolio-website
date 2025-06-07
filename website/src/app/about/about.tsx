@@ -87,9 +87,7 @@ export function AboutContent() {
             >
                 me something new.
             </FadeContent>
-            <p></p>
-            <p></p>
-            
+
             <FadeContent
               blur={false}
               delay={2550}
@@ -169,18 +167,17 @@ export function AboutContent() {
 +-----------------------------------------------------------------------------------------+
 `
                   } */}
-                  {/* {`
+                  {`
 +-----------------------------------------------------------------------------------------+
 | languages:       Python, Java, C, TypeScript, Swift, HTML/CSS, SQL, Shell, MIPS Assembly|
 +-----------------------------------------------------------------------------------------+
-| frameworks:      React.js, Next.js, SwiftUI, Node.js, Maven, JUnit, Pytest              |
+| frameworks/lib.: React.js, Next.js, Node.js, SwiftUI, Maven, JUnit, Pytest, Astroid     |
 +-----------------------------------------------------------------------------------------+
-| tools/databases: Git / GitHub, MySQL, Firebase, Linux, OpenAI / DeepSeek API, Astroid   |
+| tools/databases: Git / GitHub, MySQL, Firebase, Linux, OpenAI / DeepSeek API            |
 +-----------------------------------------------------------------------------------------+
 
-                  `} */}
-{`
-+------------------------------------------------------------------------------------------+
+                  `}
+{/* {`+------------------------------------------------------------------------------------------+
 | languages:       Python, Java, C, TypeScript, Swift, HTML/CSS, SQL, Shell, MIPS Assembly |
 +------------------------------------------------------------------------------------------+
 | libraries:       React.js, Pytest, JUnit, Astroid                                        |
@@ -189,7 +186,7 @@ export function AboutContent() {
 +------------------------------------------------------------------------------------------+
 | tools/databases: Git / GitHub, MySQL, Firebase, Linux, OpenAI / DeepSeek API             |
 +------------------------------------------------------------------------------------------+
-`}
+`} */}
                   </div>
             </FadeContent>
             

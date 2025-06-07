@@ -160,7 +160,7 @@ export default function ExperienceContent() {
                         ├──{" "}
                         
                         <span className={styles.jobTitle}>
-                          teaching assistant (L'Atelier des Chefs)
+                          teaching assistant (L&apos;Atelier des Chefs)
                         </span>
                       </span>
                       <span>

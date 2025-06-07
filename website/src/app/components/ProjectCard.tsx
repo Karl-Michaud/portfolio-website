@@ -1,4 +1,5 @@
 import { FaGithub } from 'react-icons/fa';
+import Image from 'next/image';
 import styles from './ProjectCard.module.css';
 
 interface ProjectCardProps {
@@ -27,11 +28,13 @@ export default function ProjectCard({
 
   return (
     <div className={styles.terminalBox}>
-      <img 
+      <Image 
         src={imageSrc} 
         alt={imageAlt} 
         className={styles.projectImage}
         style={imageStyle}
+        width={imageWidth || 400}
+        height={imageHeight || 300}
       />
       <div className={styles.projectContent}>
         <p className={styles.stack}>{stack}</p>

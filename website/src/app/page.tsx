@@ -1,12 +1,4 @@
 import React from 'react';
-import Navigation from './components/Navigation';
-import {
-  HomeSection,
-  AboutSection,
-  ProjectsSection,
-  ExperienceSection,
-  ContactSection
-} from './components/Sections';
 import styles from "./page.module.css";
 import { Intro } from "./home/intro";
 import { About } from "./about/about";

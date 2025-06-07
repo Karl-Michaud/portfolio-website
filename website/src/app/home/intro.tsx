@@ -19,7 +19,7 @@ const IntroContent = () => {
                     sequential={true}
                     className={styles.decrypted}
                 /> */}
-                hi, i'm karl
+                hi, i&apos;m karl
                 <span className={styles.cursor}>.</span> 
             </h1>
 
@@ -57,7 +57,7 @@ const IntroContent = () => {
                     className={styles.decrypted}
                 />
             </div>
-            <p className={styles.connect}>let's connect! (p.s., full screen for best experience!)</p>
+            <p className={styles.connect}>let&apos;s connect! (p.s., full screen for best experience!)</p>
             <div className={styles.socialLinks}>
                 <a 
                     href="https://www.linkedin.com/in/karlmichaud/" 
@@ -88,7 +88,7 @@ const IntroContent = () => {
 
 export function Intro() {
     const [key, setKey] = useState(0);
-    const [isVisible, setIsVisible] = useState(false);
+    const [, setIsVisible] = useState(false);
 
     useEffect(() => {
         const observer = new IntersectionObserver(

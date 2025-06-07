@@ -39,7 +39,7 @@ export function AboutContent() {
               easing="easing-out"
               initialOpacity={0}
             >
-                my name is karl. i'm a third-year computer science and mathematics double major at uoft.
+                my name is karl. i&apos;m a third-year computer science and mathematics double major at uoft.
             </FadeContent>
             <FadeContent
               blur={false}
@@ -48,7 +48,7 @@ export function AboutContent() {
               easing="easing-out"
               initialOpacity={0}
             >
-                i like building stuff that solves real problems, whether it's a tool, an app, or something
+                i like building stuff that solves real problems, whether it&apos;s a tool, an app, or something
             </FadeContent>
             <FadeContent
               blur={false}
@@ -67,7 +67,7 @@ export function AboutContent() {
               easing="easing-out"
               initialOpacity={0}
             >
-                i'm always tinkering. one week i'm writing C programs that generate ai videos, the next i'm
+                i&apos;m always tinkering. one week i&apos;m writing C programs that generate ai videos, the next i&apos;m
             </FadeContent>
             <FadeContent
               blur={false}
@@ -98,7 +98,7 @@ export function AboutContent() {
               initialOpacity={0}
             >
               <p>+---------------+</p>
-              <p>| what i'm into |</p>
+              <p>| what i&apos;m into |</p>
               <p>+---------------+</p>
                 
             </FadeContent>
@@ -139,7 +139,7 @@ export function AboutContent() {
               easing="easing-out"
               initialOpacity={0}
             >
-                {"-> rock climbing and outdoor activities (i want to start mountaneering!)"}
+                {"-> rock climbing and outdoor activities (i want to start mountaineering!)"}
             </FadeContent>
 
             <FadeContent

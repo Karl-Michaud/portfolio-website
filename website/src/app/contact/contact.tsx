@@ -3,6 +3,7 @@
 import styles from "./contact.module.css";
 import { useEffect, useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
+import Image from 'next/image';
 import FadeContent from "../components/FadeContent";
 
 export default function ContactContent() {
@@ -45,7 +46,7 @@ Options:
               initialOpacity={0}
             >
               <div className={styles.terminalBox}>
-                <img src="/images/headshot.png" alt="profile-pic preview" className={styles.projectImage}/>
+                <Image src="/images/headshot.png" alt="profile-pic preview" className={styles.projectImage} width={400} height={400}/>
 
               </div>
             <div className={styles.table}>

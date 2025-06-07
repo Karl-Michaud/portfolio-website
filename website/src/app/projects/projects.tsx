@@ -3,7 +3,7 @@
 import styles from "./projects.module.css";
 import { useEffect, useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import { FaGithub } from 'react-icons/fa';
+
 import FadeContent from "../components/FadeContent";
 import ProjectCard from "../components/ProjectCard";
 
@@ -14,7 +14,7 @@ export function ProjectsContent() {
   let animationNotInProgress: boolean = false;
 
   function handleClick(index: number) {
-    let temp: Array<boolean> = projectShow.map((e) => e);
+    const temp: Array<boolean> = projectShow.map((e) => e);
     for (let i = 0; i < numProjects; i++) {
       temp[i] = false;
     }

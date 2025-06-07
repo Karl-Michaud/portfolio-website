@@ -57,7 +57,7 @@ const IntroContent = () => {
                     className={styles.decrypted}
                 />
             </div>
-            <p className={styles.connect}>let's connect!</p>
+            <p className={styles.connect}>let's connect! (p.s., full screen for best experience!)</p>
             <div className={styles.socialLinks}>
                 <a 
                     href="https://www.linkedin.com/in/karlmichaud/" 

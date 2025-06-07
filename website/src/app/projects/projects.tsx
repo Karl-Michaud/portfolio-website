@@ -55,7 +55,7 @@ export function ProjectsContent() {
               </div>
               <div className={styles.row}>
                   <button className={styles.button} onClick={() => handleClick(3)}>portfolio</button>
-                  <button className={styles.button} onClick={() => handleClick(4)}>recyclobot</button>
+                  <button className={styles.button} onClick={() => handleClick(4)}>recyclobot-deltahacks</button>
                   <button className={styles.button} onClick={() => handleClick(5)}>talk-to-a-club</button>           
               </div>
             </FadeContent>
@@ -169,10 +169,10 @@ export function ProjectsContent() {
                   <TypeAnimation
                     className={styles.terminalItem}
                     sequence={[
-                      './recyclobot',
+                      './recyclobot-deltahacks',
                       2300,
                     ]}
-                    speed={70}
+                    speed={75}
                     cursor={false}
                     repeat={0}
                   />
@@ -287,7 +287,7 @@ export function ProjectsContent() {
           {projectShow[4] && animationNotInProgress && 
               <FadeContent
               blur={false}
-              delay={550}
+              delay={725}
               duration={600}
               easing="easing-out"
               initialOpacity={0}

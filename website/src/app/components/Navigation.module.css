@@ -38,15 +38,96 @@
   display: none;
 }
 
+@media (min-width: 601px) and (max-width: 767px) {
+    .navBig {
+        display: none;
+      }
+    
+      .navMobile {
+        display: none;
+      }
+    
+      .navMobileMed {
+        display: flex;
+        /* Add your mobile medium nav styles here */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        font-size: 1rem;
+        font-weight: 400;
+        text-transform: lowercase;
+        margin-top: 2vh;
+      }
+    
+      .navMobileMed a {
+        text-decoration: none;
+        color: var(--foreground);
+        opacity: 0.85;
+        transition: opacity 0.2s ease;
+      }
+    
+      .navMobileMed a:hover {
+        text-decoration: underline;
+      }
+      
+      .navMobileMed span {
+        color: var(--foreground);
+        opacity: 0.5;
+      }
+}
+
+
 /* Mobile Medium */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 600px) {
   .navBig {
     display: none;
   }
+
+  .navMobile {
+    display: none;
+  }
+
   .navMobileMed {
     display: flex;
     /* Add your mobile medium nav styles here */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    margin-top: 2vh;
+    font-size: 0.85rem;
   }
+
+  .navMobileMed a {
+    text-decoration: none;
+    color: var(--foreground);
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+  }
+
+  .navMobileMed a:hover {
+    text-decoration: underline;
+  }
+  
+  .navMobileMed span {
+    color: var(--foreground);
+    opacity: 0.5;
+  }
+
 }
 
 /* Mobile */
@@ -73,6 +154,22 @@
     font-weight: 400;
     text-transform: lowercase;
     margin-top: 2vh;
+  }
+
+  .navMobile a {
+    text-decoration: none;
+    color: var(--foreground);
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+  }
+
+  .navMobile a:hover {
+    text-decoration: underline;
+  }
+  
+  .navMobile span {
+    color: var(--foreground);
+    opacity: 0.5;
   }
 
 } 

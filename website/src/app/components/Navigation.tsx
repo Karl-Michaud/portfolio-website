@@ -38,6 +38,7 @@ export default function Navigation() {
         <Link href="/#experience" onClick={(e) => scrollToSection(e, 'experience')}>experience</Link>
         <span>|</span>
         <Link href="/#contact" onClick={(e) => scrollToSection(e, 'contact')}>contact</Link>
+        <span>|</span>
         <Link href="/">my resume</Link>
       </nav>
       <nav className={styles.navMobile}>

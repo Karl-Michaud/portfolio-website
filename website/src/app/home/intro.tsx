@@ -1,24 +1,17 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from 'react-icons/fa';
 import DecryptedText from "./decrypted_text";
 import styles from './intro.module.css';
+import { div } from 'framer-motion/client';
 
 const AnimationSpeed: number = 50;
 
-const IntroContent = () => {
+const IntroContentDesktop = () => {
     return (
-        <div className={styles.content}>
+        <div className={styles.desktop}>
             <h1 className={styles.title}>
-                {/* <DecryptedText
-                    text="hi, i'm karl"
-                    animateOn="view"
-                    speed={100}
-                    maxIterations={15}
-                    sequential={true}
-                    className={styles.decrypted}
-                /> */}
                 hi, i&apos;m karl
                 <span className={styles.cursor}>.</span> 
             </h1>
@@ -83,8 +76,174 @@ const IntroContent = () => {
                 </a>
             </div>
         </div>
+
     );
 };
+
+const IntroContentMedium = () => {
+    return (
+        <div className={styles.mobilemed}>
+            <h1 className={styles.title}>
+                hi, i&apos;m karl
+                <span className={styles.cursor}>.</span> 
+            </h1>
+
+            <div className={styles.description}>
+                <DecryptedText
+                    text="-> compsci & math double major @ uoft"
+                    animateOn="view"
+                    speed={AnimationSpeed}
+                    maxIterations={10}
+                    sequential={true}
+                    className={styles.decrypted}
+                />
+                <DecryptedText
+                    text="-> always learning and tinkering with new ideas"
+                    animateOn="view"
+                    speed={AnimationSpeed + 5}
+                    maxIterations={10}
+                    sequential={true}
+                    className={styles.decrypted}
+                    lang="en"
+                />
+                <DecryptedText
+                    text="-> building scalable apps that solve real problems"
+                    animateOn="view"
+                    speed={AnimationSpeed + 10}
+                    maxIterations={10}
+                    sequential={true}
+                    className={styles.decrypted}
+                    lang="en"
+                />
+                <DecryptedText
+                    text="-> obsessed with low-level programming, compilers and os"
+                    animateOn="view"
+                    speed={AnimationSpeed + 15}
+                    maxIterations={10}
+                    sequential={true}
+                    className={styles.decrypted}
+                    lang="en"
+                />
+            </div>
+            <p className={styles.connect}>let&apos;s connect!</p>
+            <p className={styles.connect2}>(p.s., best experienced in full-screen on a computer!)</p>
+            <div className={styles.socialLinks}>
+                <a 
+                    href="https://www.linkedin.com/in/karlmichaud/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={styles.socialLink}
+                >
+                    <FaLinkedin />
+                </a>
+                <a 
+                    href="https://github.com/Karl-Michaud" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={styles.socialLink}
+                >
+                    <FaGithub />
+                </a>
+                <a 
+                    href="mailto:karl.michaud@mail.utoronto.ca" 
+                    className={styles.socialLink}
+                >
+                    <FaEnvelope />
+                </a>
+            </div>
+        </div>
+
+    );
+};
+
+const IntroContentSmall= () => {
+    return (
+        <div className={styles.mobile}>
+            <h1 className={styles.title}>
+                hi, i&apos;m karl
+                <span className={styles.cursor}>.</span> 
+            </h1>
+
+            <div className={styles.description}>
+                <DecryptedText
+                    text="-> compsci & math double major @ uoft"
+                    animateOn="view"
+                    speed={AnimationSpeed}
+                    maxIterations={10}
+                    sequential={true}
+                    className={styles.decrypted}
+                />
+                <DecryptedText
+                    text="-> always learning and tinkering with      new ideas"
+                    animateOn="view"
+                    speed={AnimationSpeed + 5}
+                    maxIterations={10}
+                    sequential={true}
+                    className={styles.decrypted}
+                    lang="en"
+                />
+
+                <DecryptedText
+                    text="-> building scalable apps that solve       real problems"
+                    animateOn="view"
+                    speed={AnimationSpeed + 10}
+                    maxIterations={10}
+                    sequential={true}
+                    className={styles.decrypted}
+                    lang="en"
+                />
+
+                <DecryptedText
+                    text="-> obsessed with low-level programming,    compilers and os"
+                    animateOn="view"
+                    speed={AnimationSpeed + 15}
+                    maxIterations={10}
+                    sequential={true}
+                    className={styles.decrypted}
+                    lang="en"
+                />
+            </div>
+            <p className={styles.connect}>let&apos;s connect!</p>
+            <p className={styles.connect2}>p.s., best experienced in full-screen on a computer!</p>
+            <div className={styles.socialLinks}>
+                <a 
+                    href="https://www.linkedin.com/in/karlmichaud/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={styles.socialLink}
+                >
+                    <FaLinkedin />
+                </a>
+                <a 
+                    href="https://github.com/Karl-Michaud" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={styles.socialLink}
+                >
+                    <FaGithub />
+                </a>
+                <a 
+                    href="mailto:karl.michaud@mail.utoronto.ca" 
+                    className={styles.socialLink}
+                >
+                    <FaEnvelope />
+                </a>
+                <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.socialLink2}
+                    title="Resume"
+                >
+                    <FaFileAlt />
+                </a>
+            </div>
+        </div>
+
+    );
+};
+
+
 
 export function Intro() {
     const [key, setKey] = useState(0);
@@ -122,7 +281,16 @@ export function Intro() {
     return (
         <div className={styles.container}>
             <div key={key}>
-                <IntroContent />
+                <div className={styles.desktop}>
+                    <IntroContentDesktop/>
+                </div>
+                <div className={styles.mobilemed}>
+                    <IntroContentMedium/>
+                </div>
+                <div className={styles.mobile}>
+                    <IntroContentSmall/>
+                </div>
+
             </div>
         </div>
     );

@@ -266,8 +266,8 @@ export function About() {
   }, [hasAnimated]);
 
   return (
-    <div className={styles.container} id="about">
-      <div key={key}>
+    <div className={styles.container} id="about" key={key}>
+      <div className={styles.desktop}>
         <AboutContent />
       </div>
     </div>

@@ -1,208 +1,350 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--background);
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+
+.desktop {
+  display: none;
 }
 
-.terminal-item {
-  flex-direction: row;
+.tablet {
+  display: none;
 }
 
-.terminal-item p {
-  flex-direction: row;
-  position: fixed;
+.mobile {
+  display: none;
 }
 
-.terminal-item2 {
-  flex-direction: row;
+.mobilemed {
+  display: block;
 }
 
-.terminal-item2 p {
-  flex-direction: row;
-  position: fixed;
-  padding-bottom: 0.5rem;
-}
-
-.row {
-  flex-direction: row;  /* Optional: this is the default */
-  width: 100%;
-  box-sizing: border-box;
-  white-space: nowrap;
-
-  display: flex;
-  flex-direction: row;
-  gap: 2ch;
-}
-
-.title {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-}
-
-.title2 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-}
-
-.content {
-    max-width: 1000px;
-    width: 100%;
-}
-
-.description {
+/* Desktop */
+@media (min-width: 1024px) {
+  .desktop {
+    display: block;
+  }
+  .tablet, .mobile, .mobilemed {
+    display: none;
+  }
+  .container {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 0rem;
-    /* margin-bottom: 3rem; */
-    font-size: 1.1rem;
-}
+    align-items: center;
+    justify-content: center;
 
-.table {
-  /* white-space: pre; */
-  display: inline-block;  /* shrinks container to content width */
-  text-align: left;
-}
-
-.button {
-  color: var(--foreground); /* Or set your custom color */
-  font-family: var(--font-lucida);
-  background-color: transparent;
-  border: 0cap;
-  font-size: 1.1rem;
-  /* font-size: 1rem; */
-  font-weight: 400;
-  text-transform: lowercase;
-  width: 22ch; /* same width for all buttons */
-  text-align: left;
-}
-
-.button:hover {
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-.table {
-  white-space: pre;
-  display: inline-block;  /* shrinks container to content width */
-  text-align: left;
-}
-
-.terminalBox {
-  border: 1px dashed #4CAF50;
-  background-color: #0b0c0b;
-  color: #4CAF50;                
-  font-family: "Courier New", Courier, monospace;
-  padding: 1rem;              
-  margin-top: 1rem;            
-  white-space: pre-wrap;         
-  max-width: 480px;              
-  box-shadow: 0 0 8px #0f0a0f;
-  border-radius: 4px;
-  word-wrap: break-word;
-  line-height: 1.3;
-}
-
-.terminalBox img {
-  max-width: 100%;
-  display: block;
-  margin-top: 0.5rem;
-  filter: grayscale(80%) contrast(120%) brightness(90%);
-  border: 1px solid #4CAF50;
-  border-radius: 3px;
-}
-
-.summary {
-  display: block;
-}
-
-.projectDetails p {
-  font-family: monospace;
-  overflow: hidden; /* clears floats */
-  margin: 0.4rem 0;
-}
-
-.projectDetails strong {
-  float: left;
-  width: 10ch;        /* fixed width for label */
-  font-weight: normal; /* or bold if you prefer */
-  color: #4CAF50;
-  padding-right: 0.5ch;
-}
-
-/* trick to align multiline text nicely: */
-.summary strong {
-  float: left;
-  width: 7.5ch;        /* reserve width for "Summary:" label */
-  font-weight: normal;  /* or keep bold if you want */
-  color: #4CAF50;
-  padding-right: 0.3ch;
-}
-
-.summary {
-  overflow: hidden;    /* clears float */
-  text-indent: 0;
-  margin-left: 0;
-}
-
-/* Add a nice terminal-style separator line */
-.separator {
-  border: none;
-  border-top: 1px solid #4CAF50; /* terminal green line */
-  margin: 0.8rem 0;
-}
-
-/* GitHub link styling */
-.githubLink {
-  color: #4CAF50;
-  text-decoration: none;
-  font-family: monospace;
-  font-size: 0.85rem;            /* smaller font */
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-}
-
-.githubLink:hover {
-  text-decoration: underline;
-}
-
-
-.height {
-  height: 500px;       /* or use min-height */
-}
-
-.height ProjectCard {
-  min-height: 390px;       /* or use min-height */
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: none;
+    background-color: var(--background);
+    box-sizing: border-box;
+    
+  }
+  
+  .terminal-item {
+    flex-direction: row;
+  }
+  
+  .title {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+  }
+  
+  .content {
+      width: 100%;
   }
   
   .description {
-    max-width: 90%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      /* margin-bottom: 3rem; */
+      margin-top: 1rem;
+      font-size: 1.1rem;
+  }
+  
+  
+  .title2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .content {
     width: 100%;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+  }
+
+  .button {
+    color: var(--foreground);
+    font-family: var(--font-lucida);
+    background-color: transparent;
+    border: 0cap;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    width: 22ch;
+    text-align: left;
+  }
+  
+  .button:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  
+  .terminalItem {
+    flex-direction: row;
+  }
+
+  .row {
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    gap: 2ch;
+  }
+
+  .table {
+    white-space: pre;
+    display: inline-block;  /* shrinks container to content width */
+    text-align: left;
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tablet {
+    display: block;
+  }
+  .desktop, .mobile, .mobilemed {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--background);
+    box-sizing: border-box;
+    
+  }
+  
+  .terminal-item {
+    flex-direction: row;
+  }
+  
+  .title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+  }
+  
+  .content {
+      width: 100%;
+  }
+  
+  .description {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      /* margin-bottom: 3rem; */
+      margin-top: 1rem;
+      font-size: 1rem;
+  }
+  
+  
+  .title2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .content {
+    width: 100%;
+  }
+
+  .button {
+    color: var(--foreground);
+    font-family: var(--font-lucida);
+    background-color: transparent;
+    border: 0cap;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    width: 20ch;
+    text-align: left;
+  }
+
+  .button2 {
+    color: var(--foreground);
+    font-family: var(--font-lucida);
+    background-color: transparent;
+    border: 0cap;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    width: 21ch;
+    text-align: left;
+  }
+  
+  .button:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  
+  .terminalItem {
+    flex-direction: row;
+  }
+
+  .row {
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    gap: 1ch;
+  }
+}
+
+/* Medium Mobile */
+@media (min-width: 480px) and (max-width: 767px) {
+  .mobilemed {
+    display: block;
+  }
+  .desktop, .tablet, .mobile {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--background);
+    box-sizing: border-box;
+
+    padding-right: 5vw;
+    
+  }
+  
+  .terminal-item {
+    flex-direction: row;
+ 
+  }
+  
+  .title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+  }
+  
+  .content {
+      width: 100%;
+  }
+  
+  .description {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      /* margin-bottom: 3rem; */
+      margin-top: 1rem;
+      font-size: 0.9rem;
+  }
+  
+  
+  .title2 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .content {
+    width: 100%;
+  }
+
+  .button {
+    color: var(--foreground);
+    font-family: var(--font-lucida);
+    background-color: transparent;
+    border: 0cap;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    width: 22ch;
+    text-align: left;
+  }
+
+  
+  .button:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  
+  .terminalItem {
+    flex-direction: row;
+  }
+
+  .row {
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    gap: 4ch;
+  }
+
+  .row2 {
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1ch;
+    padding-bottom: 1ch;
+    gap: 4ch;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 479px) {
+  .mobile {
+    display: block;
+  }
+  .desktop, .tablet, .mobilemed {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--background);
+    padding: 0 5vw;
+    padding-bottom: 30vh;
+    box-sizing: border-box;
   }
 }

@@ -12,17 +12,19 @@ export default function Home() {
       <div id="home" className={styles.page}>
         <Intro/>
       </div>
-      <div id="about" className={styles.page}>
-        <About/>
-      </div>
-      <div id="projects" className={styles.page}>
-        <Projects/>
-      </div>
-      <div id="experience" className={styles.page}>
-        <Experience/>
-      </div>
-      <div id="contact" className={styles.page}>
-        <Contact/>
+      <div className={styles.alignLeft}>
+        <div id="about" className={styles.page}>
+          <About/>
+        </div>
+        <div id="projects" className={styles.page}>
+          <Projects/>
+        </div>
+        <div id="experience" className={styles.page}>
+          <Experience/>
+        </div>
+        <div id="contact" className={styles.page}>
+          <Contact/>
+        </div>
       </div>
     </div>
   );

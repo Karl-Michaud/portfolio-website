@@ -17,3 +17,36 @@
   min-height: 100vh;
   padding-top: 8vh;
 }
+
+.alignLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.alignLeft .page {
+  align-items: flex-start;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 1024px) {
+  .alignLeft .page {
+    margin-left: 13vw; /* More on large screens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .alignLeft .page {
+    margin-left: 10vw; /* More on large screens */
+  }
+}
+
+@media (min-width: 1800px) {
+  .alignLeft .page {
+    margin-left: 20vw; /* Even more on very large screens */
+  }
+}

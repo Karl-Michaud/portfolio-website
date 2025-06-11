@@ -4,9 +4,8 @@
   align-items: center;
   justify-content: center;
   background-color: var(--background);
-  min-height: 70vh;
-  margin-top: 40rem;
-  margin-right: 15rem;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 .terminal-item {
@@ -192,7 +191,8 @@
 
 @media (max-width: 480px) {
   .container {
-    margin-top: 63rem;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     margin-left: auto;
     margin-right: auto;
     width: 100%;

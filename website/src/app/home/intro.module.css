@@ -45,7 +45,7 @@
         justify-content: center;
         
         
-        padding-top: 20vh;
+        padding-top: 15vh;
         padding-bottom: 20vh;
         padding-right: 10vw;
         background-color: var(--background);
@@ -289,8 +289,8 @@
         justify-content: center;
         padding-top: 15vh;
         padding-bottom: 20vh;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        padding-left: 6vw;
+        padding-right: 6vw;
         background-color: var(--background);
         overflow: hidden;
     }

@@ -174,7 +174,7 @@ const IntroContentSmall= () => {
                     className={styles.decrypted}
                 />
                 <DecryptedText
-                    text="-> always learning and tinkering with      new ideas"
+                    text="-> always learning and tinkering with new ideas"
                     animateOn="view"
                     speed={AnimationSpeed + 5}
                     maxIterations={10}
@@ -184,7 +184,7 @@ const IntroContentSmall= () => {
                 />
 
                 <DecryptedText
-                    text="-> building scalable apps that solve       real problems"
+                    text="-> building scalable apps that solve real problems"
                     animateOn="view"
                     speed={AnimationSpeed + 10}
                     maxIterations={10}
@@ -194,7 +194,7 @@ const IntroContentSmall= () => {
                 />
 
                 <DecryptedText
-                    text="-> obsessed with low-level programming,    compilers and os"
+                    text="-> obsessed with low-level programming, compilers and os"
                     animateOn="view"
                     speed={AnimationSpeed + 15}
                     maxIterations={10}

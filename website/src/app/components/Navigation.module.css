@@ -26,6 +26,12 @@
   text-decoration: underline;
 }
 
+.navBig a.active {
+  color: #4CAF50;
+  text-decoration: underline;
+  opacity: 1;
+}
+
 .navBig span {
   color: var(--foreground);
   opacity: 0.5;
@@ -77,6 +83,12 @@
       .navMobileMed a:hover {
         text-decoration: underline;
       }
+
+      .navMobileMed a.active {
+        color: #4CAF50;
+        text-decoration: underline;
+        opacity: 1;
+      }
       
       .navMobileMed span {
         color: var(--foreground);
@@ -125,6 +137,12 @@
   .navMobileMed a:hover {
     text-decoration: underline;
   }
+
+  .navMobileMed a.active {
+    color: #4CAF50;
+    text-decoration: underline;
+    opacity: 1;
+  }
   
   .navMobileMed span {
     color: var(--foreground);
@@ -169,6 +187,12 @@
 
   .navMobile a:hover {
     text-decoration: underline;
+  }
+
+  .navMobile a.active {
+    color: #4CAF50;
+    text-decoration: underline;
+    opacity: 1;
   }
   
   .navMobile span {

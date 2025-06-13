@@ -75,7 +75,15 @@ export default function ExperienceContentDesktop() {
                         │   ├── [May 2025 - Present]
                       </span>
                       <span>
-                        │   └── Designing and maintaining core features of PythonTA,
+                        │   └── Designing and maintaining core features of{" "}
+                        <a 
+                          href="https://github.com/pyta-uoft/pyta" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className={styles.pythonTALink}
+                        >
+                          PythonTA
+                        </a>,
                       </span>
                       <span>
                         │       a static analysis tool used by 3900+ students annually
@@ -228,7 +236,15 @@ export function ExperienceContentTablet() {
                           │   ├── [May 2025 - Present]
                         </span>
                         <span>
-                          │   └── Designing and maintaining core features of PythonTA,
+                          │   └── Designing and maintaining core features of{" "}
+                          <a 
+                            href="https://github.com/pyta-uoft/pyta" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className={styles.pythonTALink}
+                          >
+                            PythonTA
+                          </a>,
                         </span>
                         <span>
                           │       a static analysis tool used by 3900+ students annually
@@ -398,7 +414,15 @@ export function ExperienceContentMobileMed() {
                         │   └── Designing and maintaining core features
                       </span>
                       <span>
-                        │       of PythonTA, a static analysis tool used
+                        │       of{" "}
+                        <a 
+                          href="https://github.com/pyta-uoft/pyta" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className={styles.pythonTALink}
+                        >
+                          PythonTA
+                        </a>, a static analysis tool used
                       </span>
                       <span>
                         │       by 3900+ students annually to improve
@@ -616,7 +640,15 @@ export function ExperienceContentMobile() {
                         │   └── Designing and maintaining core 
                       </span>
                       <span>
-                        │       features of PythonTA, a static 
+                        │       features of{" "}
+                        <a 
+                          href="https://github.com/pyta-uoft/pyta" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className={styles.pythonTALink}
+                        >
+                          PythonTA
+                        </a>, a static 
                       </span>
                       <span>
                         │       analysis tool used by 3900+ 

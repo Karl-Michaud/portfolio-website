@@ -1,133 +1,496 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* min-height: 100vh;
-  padding: 2rem; */
-  background-color: var(--background);
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+.desktop {
+  display: none;
 }
 
-.terminal-item {
-  flex-direction: row;
+.tablet {
+  display: none;
 }
 
-.title {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
+.mobile {
+  display: none;
 }
 
-.content {
-    max-width: 1000px;
-    width: 100%;
+.mobilemed {
+  display: block;
 }
 
-.description {
+@media (min-width: 1024px) {
+  .desktop {
+    display: block;
+  }
+  .tablet, .mobile, .mobilemed {
+    display: none;
+  }
+  .container {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 3rem;
-    /* margin-top: 1rem; */
-    font-size: 1.1rem;
-}
-
-.asciiBlock {
-  font-family: monospace;
-  white-space: pre;
-  font-size: 1.1rem;
-  color: var(--textColor); /* Optional: match surrounding text */
-  margin-top: 1rem;
-}
-
-.option {
-  color: #4CAF50; /* Green like terminal flag */
-  font-family: var(--font-lucida);
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.option:hover {
-  text-decoration: underline;
-}
-
-.table {
-  font-family: var(--font-lucida);
-  white-space: pre-wrap;
-  font-size: 1.1rem;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem; /* optional */
-}
-.option {
-  color: #4CAF50;
-  font-family: var(--font-lucida);
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.option:hover {
-  text-decoration: underline;
-}
-
-.meta {
-  color: gray;
-  font-family: var(--font-lucida);
-  font-style: italic;
-  text-decoration: none;
-}
-
-.meta:hover {
-  text-decoration: underline;
-}
-
-.terminalBox {
-  border: 2px dashed #4CAF50;
-  background-color: rgba(11, 12, 11, 0.95);
-  color: #4CAF50;
-  font-family: "Courier New", Courier, monospace;
-  padding: 0.75rem;
-  width: fit-content;
-  max-width: 400px;
-  border-radius: 4px;
-  word-wrap: break-word;
-  line-height: 1.2;
-  margin: 0.5rem auto 1rem auto; /* ⬅️ centers horizontally */
-}
-
-
-.projectImage {
-  display: block;
-  margin: 0 auto;
-  filter: grayscale(50%) contrast(110%) brightness(95%);
-  border: 2px dashed #4CAF50;
-  border-radius: 3px;
-  object-fit: cover;
-  width: 250px;               /* or any size you want */
-  height: auto;    
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding-top: 5vh;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh;
+    padding: 2rem; */
+    background-color: var(--background);
     padding-bottom: 5vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: none;
+  }
+  
+  .terminal-item {
+    flex-direction: row;
+  }
+  
+  .title {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+  }
+  
+  .content {
+      max-width: 1000px;
+      width: 100%;
   }
   
   .description {
-    max-width: 100%;
-    width: 100%;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    /* font-size: 0.9rem; */
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 3rem;
+      /* margin-top: 1rem; */
+      font-size: 1.1rem;
   }
+  
+  .asciiBlock {
+    font-family: monospace;
+    white-space: pre;
+    font-size: 1.1rem;
+    color: var(--textColor); /* Optional: match surrounding text */
+    margin-top: 1rem;
+  }
+  
+  .option {
+    color: #4CAF50; /* Green like terminal flag */
+    font-family: var(--font-lucida);
+    font-weight: 500;
+    text-decoration: none;
+
+    display: inline-block;
+    width: 15ch;
+  }
+  
+  .option:hover {
+    text-decoration: underline;
+  }
+  
+  .table {
+    font-family: var(--font-lucida);
+    white-space: pre-wrap;
+    font-size: 1.1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem; /* optional */
+  }
+  
+  .meta {
+    color: gray;
+    font-family: var(--font-lucida);
+    font-style: italic;
+    text-decoration: none;
+  }
+  
+  .meta:hover {
+    text-decoration: underline;
+  }
+  
+  .terminalBox {
+    border: 2px dashed #4CAF50;
+    background-color: rgba(11, 12, 11, 0.95);
+    color: #4CAF50;
+    font-family: "Courier New", Courier, monospace;
+    padding: 0.75rem;
+    width: fit-content;
+    max-width: 400px;
+    border-radius: 4px;
+    word-wrap: break-word;
+    line-height: 1.2;
+    margin: 0.5rem auto 1rem auto; /* ⬅️ centers horizontally */
+  }
+  
+  
+  .projectImage {
+    display: block;
+    margin: 0 auto;
+    filter: grayscale(50%) contrast(110%) brightness(95%);
+    border: 2px dashed #4CAF50;
+    border-radius: 3px;
+    object-fit: cover;
+    width: 250px;               /* or any size you want */
+    height: auto;    
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tablet {
+    display: block;
+  }
+  .desktop, .mobile, .mobilemed {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh;
+    padding: 2rem; */
+    background-color: var(--background);
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+  }
+  
+  .terminal-item {
+    flex-direction: row;
+  }
+  
+  .title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+  }
+  
+  .content {
+      max-width: 1000px;
+      width: 100%;
+  }
+  
+  .description {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 3rem;
+      /* margin-top: 1rem; */
+      font-size: 1rem;
+  }
+  
+  .asciiBlock {
+    font-family: monospace;
+    white-space: pre;
+    font-size: 1.1rem;
+    color: var(--textColor); /* Optional: match surrounding text */
+    margin-top: 1rem;
+  }
+  
+  .option {
+    color: #4CAF50; /* Green like terminal flag */
+    font-family: var(--font-lucida);
+    font-weight: 500;
+    text-decoration: none;
+
+    display: inline-block;
+    width: 15ch;
+  }
+  
+  .option:hover {
+    text-decoration: underline;
+  }
+  
+  .table {
+    font-family: var(--font-lucida);
+    white-space: pre-wrap;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem; /* optional */
+  }
+  
+  .meta {
+    color: gray;
+    font-family: var(--font-lucida);
+    font-style: italic;
+    text-decoration: none;
+  }
+  
+  .meta:hover {
+    text-decoration: underline;
+  }
+  
+  .terminalBox {
+    border: 2px dashed #4CAF50;
+    background-color: rgba(11, 12, 11, 0.95);
+    color: #4CAF50;
+    font-family: "Courier New", Courier, monospace;
+    padding: 0.75rem;
+    width: fit-content;
+    max-width: 400px;
+    border-radius: 4px;
+    word-wrap: break-word;
+    line-height: 1.2;
+    margin: 0.5rem auto 1rem auto; /* ⬅️ centers horizontally */
+  }
+  
+  
+  .projectImage {
+    display: block;
+    margin: 0 auto;
+    filter: grayscale(50%) contrast(110%) brightness(95%);
+    border: 2px dashed #4CAF50;
+    border-radius: 3px;
+    object-fit: cover;
+    width: 250px;               /* or any size you want */
+    height: auto;    
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .mobilemed {
+    display: block;
+  }
+  .desktop, .tablet, .mobile {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh;
+    padding: 2rem; */
+    background-color: var(--background);
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+  }
+  
+  .terminal-item {
+    flex-direction: row;
+  }
+  
+  .title {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+  }
+  
+  .content {
+      max-width: 1000px;
+      width: 100%;
+  }
+  
+  .description {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 3rem;
+      /* margin-top: 1rem; */
+      font-size: 1rem;
+  }
+  
+  .asciiBlock {
+    font-family: monospace;
+    white-space: pre;
+    font-size: 1.1rem;
+    color: var(--textColor); /* Optional: match surrounding text */
+    margin-top: 1rem;
+  }
+  
+  .option {
+    color: #4CAF50; /* Green like terminal flag */
+    font-family: var(--font-lucida);
+    font-weight: 500;
+    text-decoration: none;
+
+    display: inline-block;
+    width: 13ch;
+  }
+
+  .option:hover {
+    text-decoration: underline;
+  }
+  
+  .table {
+    font-family: var(--font-lucida);
+    white-space: pre-wrap;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem; /* optional */
+  }
+  
+  .option2 {
+    color: #4CAF50;
+    font-family: var(--font-lucida);
+    font-weight: 500;
+    text-decoration: none;
+
+    display: inline-block;
+    width: 12ch;
+  }
+  
+  .meta {
+    color: gray;
+    font-family: var(--font-lucida);
+    font-style: italic;
+    text-decoration: none;
+  }
+  
+  .meta:hover {
+    text-decoration: underline;
+  }
+  
+  .terminalBox {
+    border: 2px dashed #4CAF50;
+    background-color: rgba(11, 12, 11, 0.95);
+    color: #4CAF50;
+    font-family: "Courier New", Courier, monospace;
+    padding: 0.75rem;
+    width: fit-content;
+    max-width: 400px;
+    border-radius: 4px;
+    word-wrap: break-word;
+    line-height: 1.2;
+    margin: 0.5rem auto 1rem auto; /* ⬅️ centers horizontally */
+  }
+  
+  
+  .projectImage {
+    display: block;
+    margin: 0 auto;
+    filter: grayscale(50%) contrast(110%) brightness(95%);
+    border: 2px dashed #4CAF50;
+    border-radius: 3px;
+    object-fit: cover;
+    width: 250px;               /* or any size you want */
+    height: auto;    
+  }
+}
+
+@media (max-width: 479px) {
+  .mobile {
+    display: block;
+  }
+  .desktop, .tablet, .mobilemed {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh;
+    padding: 2rem; */
+    background-color: var(--background);
+    /* padding-bottom: 20vh; */
+    padding-left: 5vw;
+  }
+  
+  .terminal-item {
+    flex-direction: row;
+  }
+  
+  .title {
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+  }
+  
+  .content {
+      max-width: 1000px;
+      width: 100%;
+  }
+  
+  .description {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 3rem;
+      /* margin-top: 1rem; */
+      font-size: 0.9rem;
+  }
+  
+  .asciiBlock {
+    font-family: monospace;
+    white-space: pre;
+    font-size: 1.1rem;
+    color: var(--textColor); /* Optional: match surrounding text */
+    margin-top: 1rem;
+  }
+  
+  .option {
+    color: #4CAF50; /* Green like terminal flag */
+    font-family: var(--font-lucida);
+    font-weight: 500;
+    text-decoration: none;
+
+    display: inline-block;
+    width: 12ch;
+  }
+
+  .option:hover {
+    text-decoration: underline;
+  }
+  
+  .table {
+    font-family: var(--font-lucida);
+    white-space: pre-wrap;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem; /* optional */
+  }
+  
+  
+  .meta {
+    color: gray;
+    font-family: var(--font-lucida);
+    font-style: italic;
+    text-decoration: none;
+
+    display: inline-block;
+    padding-bottom: 1rem;
+  }
+  
+  .meta:hover {
+    text-decoration: underline;
+  }
+  
+  .terminalBox {
+    border: 2px dashed #4CAF50;
+    background-color: rgba(11, 12, 11, 0.95);
+    color: #4CAF50;
+    font-family: "Courier New", Courier, monospace;
+    padding: 0.75rem;
+    width: fit-content;
+    max-width: 400px;
+    border-radius: 4px;
+    word-wrap: break-word;
+    line-height: 1.2;
+    margin: 0.5rem auto 1rem auto; /* ⬅️ centers horizontally */
+  }
+  
+  
+  .projectImage {
+    display: block;
+    margin: 0 auto;
+    filter: grayscale(50%) contrast(110%) brightness(95%);
+    border: 2px dashed #4CAF50;
+    border-radius: 3px;
+    object-fit: cover;
+    width: 200px;               /* or any size you want */
+    height: auto;    
+  }
+
 }

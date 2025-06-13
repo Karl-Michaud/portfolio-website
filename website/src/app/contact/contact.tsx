@@ -6,7 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image';
 import FadeContent from "../components/FadeContent";
 
-export default function ContactContent() {
+export function ContactContentDesktop() {
   return (
     <div className={styles.content}>
       <h1 className={styles.title}>
@@ -58,7 +58,7 @@ Options:
                 <a href="mailto:karl.michaud@mail.utoronto.ca" className={styles.option}>
                   --email
                 </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;Email address&nbsp;
+                Email address&nbsp;
                 <a href="mailto:karl.michaud@mail.utoronto.ca" className={styles.meta}>
                   [karl.michaud@mail.utoronto.ca]
                 </a>
@@ -66,22 +66,193 @@ Options:
 
               <div>
                 <a
-                  href="https://linkedin.com/in/karlmichaud"
+                  href="www.linkedin.com/in/karlmichaud"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.option}
                 >
                   --linkedin
                 </a>
-                &nbsp;&nbsp;LinkedIn profile&nbsp;
+                LinkedIn profile&nbsp;
                 <a
-                  href="https://linkedin.com/in/karlmichaud"
+                  href="www.linkedin.com/in/karlmichaud"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.meta}
                 >
-                  [https://linkedin.com/in/karlmichaud]
+                  [www.linkedin.com/in/karlmichaud]
                 </a>
+              </div>
+
+              
+            </div>
+        </FadeContent>
+      </div>
+      
+    </div>
+  );
+}
+
+export function ContactContentTablet() {
+  return (
+    <ContactContentDesktop />
+  );
+}
+
+export function ContactContentMobileMed() {
+  return (
+    <div className={styles.content}>
+      <h1 className={styles.title}>
+          <p className={styles.terminalItem}>{`visitor@terminal.user.dev:~$ `}</p>
+          <TypeAnimation
+            className={styles.terminalItem}
+            sequence={[
+              '',
+              1000,
+              'contact-me --help',
+              2000,
+            ]}
+            speed={70}
+            cursor={false}
+            repeat={0}
+          />
+      </h1>
+      <div className={styles.description}>
+        <FadeContent
+              blur={false}
+              delay={1800}
+              duration={600}
+              easing="easing-out"
+              initialOpacity={0}
+            >
+              <div className={styles.terminalBox}>
+                <Image src="/images/headshot.png" alt="profile-pic preview" className={styles.projectImage} width={400} height={400}/>
+
+              </div>
+            <div className={styles.table}>
+              <div>Usage: contact-me [option]</div>
+              <br />
+              <div>Options:</div>
+
+              <div>
+                <div>
+                  <a href="mailto:karl.michaud@mail.utoronto.ca" className={styles.option}>
+                    --email
+                  </a>
+                  Email address
+                </div>
+                <div>
+                  <a className={styles.option2}></a>
+                  <a href="mailto:karl.michaud@mail.utoronto.ca" className={styles.meta}>
+                    [karl.michaud@mail.utoronto.ca]
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <a
+                    href="www.linkedin.com/in/karlmichaud"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.option}
+                  >
+                    --linkedin
+                  </a>
+                  LinkedIn profile
+                </div>
+                <div>
+                  <a className={styles.option2}></a>
+                  <a
+                    href="www.linkedin.com/in/karlmichaud"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.meta}
+                  >
+                    [www.linkedin.com/in/karlmichaud]
+                  </a>
+                </div>
+              </div>
+
+              
+            </div>
+        </FadeContent>
+      </div>
+      
+    </div>
+  );
+}
+
+export function ContactContentMobile() {
+  return (
+    <div className={styles.content}>
+      <h1 className={styles.title}>
+          <p className={styles.terminalItem}>{`visitor@terminal.user:~$ `}</p>
+          <TypeAnimation
+            className={styles.terminalItem}
+            sequence={[
+              '',
+              1000,
+              'contact --help',
+              2000,
+            ]}
+            speed={70}
+            cursor={false}
+            repeat={0}
+          />
+      </h1>
+      <div className={styles.description}>
+        <FadeContent
+              blur={false}
+              delay={1800}
+              duration={600}
+              easing="easing-out"
+              initialOpacity={0}
+            >
+              <div className={styles.terminalBox}>
+                <Image src="/images/headshot.png" alt="profile-pic preview" className={styles.projectImage} width={400} height={400}/>
+
+              </div>
+            <div className={styles.table}>
+              <div>Usage: contact [option]</div>
+              <br />
+              <div>Options:</div>
+
+              <div>
+                <div>
+                  <a href="mailto:karl.michaud@mail.utoronto.ca" className={styles.option}>
+                    --email
+                  </a>
+                  Email address
+                </div>
+                  <a href="mailto:karl.michaud@mail.utoronto.ca" className={styles.meta}>
+                    [karl.michaud@mail.utoronto.ca]
+                  </a>
+              </div>
+
+              <div>
+                <div>
+                  <a
+                    href="www.linkedin.com/in/karlmichaud"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.option}
+                  >
+                    --linkedin
+                  </a>
+                  LinkedIn profile
+                </div>
+                <div>
+                  <a className={styles.option2}></a>
+                  <a
+                    href="www.linkedin.com/in/karlmichaud"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.meta}
+                  >
+                    [www.linkedin.com/in/karlmichaud]
+                  </a>
+                </div>
               </div>
 
               
@@ -124,7 +295,18 @@ export function Contact() {
   return (
     <div className={styles.container} id="contact">
       <div key={key}>
-        <ContactContent />
+        <div className={styles.desktop}>
+          <ContactContentDesktop />
+        </div>
+        <div className={styles.tablet}>
+          <ContactContentTablet />
+        </div>
+        <div className={styles.mobilemed}>
+          <ContactContentMobileMed />
+        </div>
+        <div className={styles.mobile}>
+          <ContactContentMobile />
+        </div>
       </div>
     </div>
   );

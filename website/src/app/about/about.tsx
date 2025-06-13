@@ -69,12 +69,12 @@ export function AboutContentDesktop() {
           </FadeContent>
             <FadeContent
               blur={false}
-              delay={2600}
+              delay={2350}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
             >
-                {"-> systems programming and low-level development (i love C / assembly way more than i should)"}
+                {"-> systems programming and low-level development (i love C way more than i should)"}
             </FadeContent>
 {/* 
             <FadeContent
@@ -89,7 +89,7 @@ export function AboutContentDesktop() {
 
             <FadeContent
               blur={false}
-              delay={2600}
+              delay={2350}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -99,7 +99,7 @@ export function AboutContentDesktop() {
 
             <FadeContent
               blur={false}
-              delay={2600}
+              delay={2350}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -109,7 +109,7 @@ export function AboutContentDesktop() {
 
             <FadeContent
               blur={false}
-              delay={2600}
+              delay={2350}
               duration={600}
               easing="easing-out"
               initialOpacity={0}
@@ -120,7 +120,7 @@ export function AboutContentDesktop() {
 
             <FadeContent
               blur={false}
-              delay={2650}
+              delay={2400}
               duration={600}
               easing="easing-out"
               initialOpacity={0}

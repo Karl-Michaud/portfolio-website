@@ -9,23 +9,23 @@ import { Contact } from "./contact/contact";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div id="home" className={styles.page}>
+      {/* <div className={styles.alignLeft}> */}
+        <div id="home" className={styles.page}>
         <Intro/>
-      </div>
-      <div className={styles.alignLeft}>
-        <div id="about" className={styles.page}>
+        </div>
+        <div id="about" className={`${styles.page} ${styles.leftAligned}`}>
           <About/>
         </div>
-        <div id="projects" className={styles.page}>
+        <div id="projects" className={`${styles.page} ${styles.leftAligned}`}>
           <Projects/>
         </div>
-        <div id="experience" className={styles.page}>
+        <div id="experience" className={`${styles.page} ${styles.leftAligned}`}>
           <Experience/>
         </div>
-        <div id="contact" className={styles.page}>
+        <div id="contact" className={`${styles.page} ${styles.leftAligned}`}>
           <Contact/>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 }

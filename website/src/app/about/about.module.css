@@ -15,7 +15,7 @@
 }
 
 /* Desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1300px) {
   .desktop {
     display: block;
   }
@@ -31,6 +31,7 @@
 
     background-color: var(--background);
     box-sizing: border-box;
+    /* width: 70vw; */
     
   }
   
@@ -49,6 +50,7 @@
   
   .content {
       width: 100%;
+      max-width: 900px;
   }
   
   .description {
@@ -66,6 +68,8 @@
     text-align: left;
     font-size: 1.1rem;
     /* margin-top: 1rem; */
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
   }
   
   .table {
@@ -80,8 +84,145 @@
 
 }
 
+/* Desktop */
+@media (min-width: 1024px) and (max-width: 1299px) {
+  .desktop {
+    display: block;
+  }
+  .tablet, .mobile, .mobilemed {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--background);
+    box-sizing: border-box;
+    /* width: 70vw; */
+    
+  }
+  
+  .terminal-item {
+    flex-direction: row;
+  }
+  
+  .title {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+  }
+  
+  .content {
+      width: 100%;
+      max-width: 900px;
+  }
+  
+  .description {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      /* margin-bottom: 3rem; */
+      margin-top: 1rem;
+      font-size: 1.1rem;
+  }
+  
+  .asciiBlock {
+    white-space: pre-wrap;
+    display: block;
+    text-align: left;
+    font-size: 1.1rem;
+    /* margin-top: 1rem; */
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  
+  .table {
+    white-space: pre;
+    display: inline-block;  /* shrinks container to content width */
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .green {
+    color: #4CAF50;
+  }
+
+}
+
 /* Tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 851px) and (max-width: 1023px) {
+  .tablet {
+    display: block;
+  }
+  .desktop, .mobile, .mobilemed {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+    padding: 0 5vw;
+    box-sizing: border-box;
+  }
+  
+  .terminal-item {
+    flex-direction: row;
+  }
+  
+  .title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+  }
+  
+  .content {
+      max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
+  }
+  
+  .description {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      font-size: 1rem;
+      overflow-wrap: break-word;
+      word-break: break-word;
+  }
+  
+  .asciiBlock {
+    white-space: pre-wrap;
+    display: block;
+    text-align: left;
+    overflow-x: auto;
+  }
+  
+  .table {
+    white-space: pre-wrap;
+    display: block;
+    text-align: left;
+    font-size: 0.95rem;
+  }
+  .green {
+    color: #4CAF50;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 850px) {
   .tablet {
     display: block;
   }
@@ -140,7 +281,7 @@
     white-space: pre-wrap;
     display: block;
     text-align: left;
-    font-size: 0.9rem;
+    font-size: 0.86rem;
   }
   .green {
     color: #4CAF50;
@@ -202,6 +343,8 @@
     text-align: left;
     font-size: 1rem;
     /* margin-top: 1rem; */
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
   }
   
   .table {
@@ -236,6 +379,7 @@
     /* padding: 0 5vw; */
     padding-left: 5vw;
     padding-right: 5vw;
+    /* padding-top: 5vh; */
     padding-bottom: 25vh;
     box-sizing: border-box;
   }

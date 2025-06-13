@@ -166,7 +166,7 @@ const IntroContentSmall= () => {
 
             <div className={styles.description}>
                 <DecryptedText
-                    text="-> compsci & math double major @ uoft"
+                    text="-> cs & math double major @ uoft"
                     animateOn="view"
                     speed={AnimationSpeed}
                     maxIterations={10}
@@ -174,7 +174,7 @@ const IntroContentSmall= () => {
                     className={styles.decrypted}
                 />
                 <DecryptedText
-                    text="-> always learning and tinkering with new ideas"
+                    text="-> always learning, always building"
                     animateOn="view"
                     speed={AnimationSpeed + 5}
                     maxIterations={10}
@@ -182,9 +182,9 @@ const IntroContentSmall= () => {
                     className={styles.decrypted}
                     lang="en"
                 />
-
                 <DecryptedText
-                    text="-> building scalable apps that solve real problems"
+
+                    text="-> creating software to solve problems"
                     animateOn="view"
                     speed={AnimationSpeed + 10}
                     maxIterations={10}
@@ -194,7 +194,7 @@ const IntroContentSmall= () => {
                 />
 
                 <DecryptedText
-                    text="-> obsessed with low-level programming, compilers and os"
+                    text="-> passionate about compilers & systems"
                     animateOn="view"
                     speed={AnimationSpeed + 15}
                     maxIterations={10}
@@ -202,6 +202,8 @@ const IntroContentSmall= () => {
                     className={styles.decrypted}
                     lang="en"
                 />
+
+
             </div>
             <p className={styles.connect}>let&apos;s connect!</p>
             <p className={styles.connect2}>p.s., best experienced in full-screen on a computer!</p>

@@ -23,85 +23,50 @@ export function AboutContentDesktop() {
           />
       </h1>
       <div className={styles.description}>
-            <FadeContent
-              blur={false}
-              delay={2200}
-              duration={600}
-              easing="easing-out"
-              initialOpacity={0}
-            >
-                👋 hello visitor,
-            </FadeContent>
-            <FadeContent
-              blur={false}
-              delay={2250}
-              duration={600}
-              easing="easing-out"
-              initialOpacity={0}
-            >
-                my name is karl. i&apos;m a third-year computer science and mathematics double major at uoft.
-            </FadeContent>
-            <FadeContent
-              blur={false}
-              delay={2300}
-              duration={600}
-              easing="easing-out"
-              initialOpacity={0}
-            >
-                i like building stuff that solves real problems, whether it&apos;s a tool, an app, or something
-            </FadeContent>
-            <FadeContent
-              blur={false}
-              delay={2350}
-              duration={600}
-              easing="easing-out"
-              initialOpacity={0}
-            >
-                weird i came up with for fun.
-            </FadeContent>
-            <p></p>
-            <FadeContent
-              blur={false}
-              delay={2400}
-              duration={600}
-              easing="easing-out"
-              initialOpacity={0}
-            >
-                i&apos;m always tinkering. one week i&apos;m writing C programs that generate ai videos, the next i&apos;m
-            </FadeContent>
-            <FadeContent
-              blur={false}
-              delay={2450}
-              duration={600}
-              easing="easing-out"
-              initialOpacity={0}
-            >
-                building social apps to make campus life smoother. i like projects that feel useful and teach
-            </FadeContent>
-            <FadeContent
-              blur={false}
-              delay={2500}
-              duration={600}
-              easing="easing-out"
-              initialOpacity={0}
-            >
-                me something new.
-            </FadeContent>
+      <FadeContent
+            blur={false}
+            delay={2200}
+            duration={600}
+            easing="easing-out"
+            initialOpacity={0}
+          >
+              👋 hello visitor,
+          </FadeContent>
+          <FadeContent
+            blur={false}
+            delay={2250}
+            duration={600}
+            easing="easing-out"
+            initialOpacity={0}
+          >
+              my name is karl. i&apos;m a third-year computer science and mathematics double major at uoft. i like building stuff that solves real problems, whether it&apos;s a tool, an app, or something weird i came up with for fun.
+          </FadeContent>
+          
+          <p></p>
+          <FadeContent
+            blur={false}
+            delay={2300}
+            duration={600}
+            easing="easing-out"
+            initialOpacity={0}
+          >
+              i&apos;m always tinkering. one week i&apos;m writing C programs that generate ai videos, the next i&apos;m building social apps to make campus life smoother. i like projects that feel useful and teach me something new.
+          </FadeContent>
 
-            <FadeContent
-              blur={false}
-              delay={2550}
-              duration={600}
-              easing="easing-out"
-              initialOpacity={0}
-            >
-              <div className={styles.asciiBlock}>
+          <FadeContent
+            blur={false}
+            delay={2350}
+            duration={600}
+            easing="easing-out"
+            initialOpacity={0}
+          >
+            <div className={styles.asciiBlock}>
                 +---------------+<br />
                 | <span className={styles.green}>what i&apos;m into</span> |<br />
                 +---------------+<br />
               </div>
-                
-            </FadeContent>
+              
+          </FadeContent>
             <FadeContent
               blur={false}
               delay={2600}
@@ -161,6 +126,7 @@ export function AboutContentDesktop() {
               initialOpacity={0}
             >
                   <div className={styles.table}>
+                    <br />
 +------------------------------------------------------------------------------------------+<br />
 | <span className={styles.green}>languages:</span>       Python, Java, C, TypeScript, Swift, HTML/CSS, SQL, Shell, MIPS Assembly |<br />
 +------------------------------------------------------------------------------------------+<br />
@@ -235,6 +201,7 @@ export function AboutContentTablet() {
             initialOpacity={0}
           >
             <div className={styles.asciiBlock}>
+            <br />
                 +---------------+<br />
                 | <span className={styles.green}>what i&apos;m into</span> |<br />
                 +---------------+<br />
@@ -278,7 +245,7 @@ export function AboutContentTablet() {
 +------------------------------------------------------------------------+<br />
 | <span className={styles.green}>libraries:</span>  React.js, Pytest, JUnit, Astroid                           |<br />
 +------------------------------------------------------------------------+<br />
-| <span className={styles.green}>frameworks:</span>frameworks: Node.js, Next.js, SwiftUI, Maven                |<br />
+| <span className={styles.green}>frameworks:</span> Node.js, Next.js, SwiftUI, Maven                           |<br />
 +------------------------------------------------------------------------+<br />
 | <span className={styles.green}>tools:</span>      Git / GitHub, MySQL, Firebase, Linux, OpenAI/DeepSeek API  |<br />
 +------------------------------------------------------------------------+<br />
@@ -411,7 +378,7 @@ export function AboutContentMobile() {
   return (
     <div className={styles.content}>
     <h1 className={styles.title}>
-        <p className={styles.terminalItem}>{`visitor@terminal.user.dev:~$ `}</p>
+        <p className={styles.terminalItem}>{`visitor@terminal.user:~$ `}</p>
         <TypeAnimation
           className={styles.terminalItem}
           sequence={[

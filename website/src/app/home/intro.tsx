@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from 'react-icons/fa';
 import DecryptedText from "./decrypted_text";
 import styles from './intro.module.css';
-import { div } from 'framer-motion/client';
 
 const AnimationSpeed: number = 50;
 

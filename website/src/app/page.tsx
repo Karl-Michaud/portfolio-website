@@ -9,7 +9,6 @@ import { Contact } from "./contact/contact";
 export default function Home() {
   return (
     <div className={styles.container}>
-      {/* <div className={styles.alignLeft}> */}
         <div id="home" className={styles.page}>
         <Intro/>
         </div>
@@ -25,7 +24,6 @@ export default function Home() {
         <div id="contact" className={`${styles.page} ${styles.leftAligned}`}>
           <Contact/>
         </div>
-      {/* </div> */}
     </div>
   );
 }

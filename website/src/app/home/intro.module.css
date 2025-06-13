@@ -417,6 +417,18 @@
         font-size: 0.8rem;
         margin-bottom: 2vh;
     }
+
+    .connectLink {
+        color: gray;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        font-weight: 500;
+        transition: opacity 0.2s ease;
+    }
+
+    .connectLink:hover {
+        opacity: 0.8;
+    }
     
     .decrypted {
         display: inline-block;

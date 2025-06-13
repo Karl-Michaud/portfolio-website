@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState } from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from 'react-icons/fa';
-import DecryptedText from "./decrypted_text";
+import React from 'react';
+import { useState, useEffect } from 'react';
 import styles from './intro.module.css';
+import DecryptedText from './decrypted_text';
+import { FaLinkedin, FaGithub, FaEnvelope, FaFileAlt } from 'react-icons/fa';
 
 const AnimationSpeed: number = 50;
 
@@ -156,6 +157,14 @@ const IntroContentMedium = () => {
 };
 
 const IntroContentSmall= () => {
+    const scrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        const element = document.getElementById('contact');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <div className={styles.mobile}>
             <h1 className={styles.title}>
@@ -204,7 +213,16 @@ const IntroContentSmall= () => {
 
 
             </div>
-            <p className={styles.connect}>let&apos;s connect!</p>
+            <p className={styles.connect}>
+                let&apos;s{" "}
+                <a 
+                    href="#contact" 
+                    onClick={scrollToContact}
+                    className={styles.connectLink}
+                >
+                    connect
+                </a>!
+            </p>
             <p className={styles.connect2}>p.s., best experienced in full-screen on a computer!</p>
             <div className={styles.socialLinks}>
                 <a 

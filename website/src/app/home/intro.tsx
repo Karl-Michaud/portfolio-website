@@ -248,7 +248,7 @@ const IntroContentSmall= () => {
                     <FaEnvelope />
                 </a>
                 <a
-                    href="/resume.pdf"
+                    href="/karl-resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.socialLink2}

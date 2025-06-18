@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import styles from './Navigation.module.css';
 
+const PDF_URL = '/karl-resume.pdf';
+
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState('home');
   const debounceRef = useRef<NodeJS.Timeout | null>(null);
@@ -16,6 +18,11 @@ export default function Navigation() {
       // Immediately set active section when clicking (no delay for user interaction)
       setActiveSection(sectionId);
     }
+  };
+
+  const openResume = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    window.open(PDF_URL, '_blank');
   };
 
   const updateActiveSection = (sectionId: string) => {
@@ -76,6 +83,27 @@ export default function Navigation() {
       updateActiveSection(currentSection);
     };
 
+    // Mobile-specific over-scroll correction
+    const handleScrollEnd = () => {
+      // Only apply correction on mobile devices
+      if (window.innerWidth <= 768) {
+        const container = document.querySelector('.container') || document.documentElement;
+        const lastSection = document.getElementById('contact');
+        
+        if (lastSection) {
+          const containerHeight = container.scrollHeight || document.documentElement.scrollHeight;
+          const viewportHeight = window.innerHeight;
+          const currentScroll = window.scrollY;
+          const maxScroll = containerHeight - viewportHeight;
+          
+          // If scrolled past the maximum scroll position, snap back to the contact section
+          if (currentScroll > maxScroll) {
+            lastSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      }
+    };
+
     // Observe all sections
     const sections = ['home', 'about', 'projects', 'experience', 'contact'];
     sections.forEach(sectionId => {
@@ -87,12 +115,25 @@ export default function Navigation() {
 
     // Add scroll listener as fallback
     window.addEventListener('scroll', handleScroll);
+    // Add scroll end listener for mobile over-scroll correction
+    window.addEventListener('scrollend', handleScrollEnd);
+    // Fallback for browsers that don't support scrollend
+    let scrollTimeout: NodeJS.Timeout;
+    const handleScrollStop = () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(handleScrollEnd, 100);
+    };
+    window.addEventListener('scroll', handleScrollStop);
+    
     // Initial check
     handleScroll();
 
     return () => {
       observer.disconnect();
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scrollend', handleScrollEnd);
+      window.removeEventListener('scroll', handleScrollStop);
+      clearTimeout(scrollTimeout);
       // Clean up timeout
       if (debounceRef.current) {
         clearTimeout(debounceRef.current);
@@ -143,7 +184,7 @@ export default function Navigation() {
           contact me
         </Link>
         <span>|</span>
-        <Link href="/">my resume</Link>
+        <Link href={PDF_URL} onClick={openResume}>my resume</Link>
       </nav>
       <nav className={styles.navMobileMed}>
         {/* Mobile Medium navigation links (customize as needed) */}
@@ -187,7 +228,7 @@ export default function Navigation() {
           contact
         </Link>
         <span>|</span>
-        <Link href="/">my resume</Link>
+        <Link href={PDF_URL} onClick={openResume}>my resume</Link>
       </nav>
       <nav className={styles.navMobile}>
         {/* Mobile navigation links (customize as needed) */}
@@ -222,6 +263,16 @@ export default function Navigation() {
         >
           experience
         </Link>
+        <span>|</span>
+        <Link 
+          href="/#contact" 
+          onClick={(e) => scrollToSection(e, 'contact')}
+          className={activeSection === 'contact' ? styles.active : ''}
+        >
+          contact
+        </Link>
+        <span>|</span>
+        <Link href={PDF_URL} onClick={openResume}>resume</Link>
       </nav>
     </>
   );

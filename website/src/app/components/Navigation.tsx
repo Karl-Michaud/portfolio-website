@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import styles from './Navigation.module.css';
 
-const PDF_URL = '/karl-resume.pdf';
+const PDF_URL = '/Karl-Alexandre_Michaud_Resume_Jun_19.pdf';
 
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState('home');

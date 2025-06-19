@@ -112,16 +112,13 @@ export default function ExperienceContentDesktop() {
                         │   ├── [Aug 2024 - May 2025]
                       </span>
                       <span>
-                        │   ├── Organized events for 15+ attendees while balancing full-time studies
+                        │   ├── Led event planning, contributing to 5 UTSL Club Award nominations
                       </span>
                       <span>
-                        │   ├── Forecasted attendance and resolved logistical issues
+                        │   ├── Organized 5 events with 15+ attendees during the club&apos;s founding year
                       </span>
                       <span>
-                        │   ├── Onboarded 25+ new members through clear communication
-                      </span>
-                      <span>
-                        │   └── Provided real-time support to ensure smooth event flow
+                        │   └── Accelerated club growth by onboarding 25+ new members
                       </span>
                       │
                       </div>
@@ -273,19 +270,16 @@ export function ExperienceContentTablet() {
                           │   ├── [Aug 2024 - May 2025]
                         </span>
                         <span>
-                          │   ├── Organized events for 15+ attendees while balancing
+                          │   ├── Led event planning, contributing to 5 UTSL Club
                         </span>
                         <span>
-                          │   │   full-time studies
+                          │   │   Award nominations in our inaugural year
                         </span>
                         <span>
-                          │   ├── Forecasted attendance and resolved logistical issues
+                          │   ├── Organized 5 events with 15+ attendees
                         </span>
                         <span>
-                          │   ├── Onboarded 25+ new members through clear communication
-                        </span>
-                        <span>
-                          │   └── Provided real-time support to ensure smooth event flow
+                          │   └── Accelerated club growth by onboarding 25+ new members
                         </span>
                         │
                         </div>
@@ -454,37 +448,28 @@ export function ExperienceContentMobileMed() {
                         │   │
                       </span>
                       <span>
-                        │   ├── Organized events for 15+ attendees while 
+                        │   ├── Led event planning, contributing to 5 
                       </span>
                       <span>
-                        │   │   balancing full-time studies
-                      </span>
-                      <span>
-                        │   │
-                      </span>
-                      <span>
-                        │   ├── Forecasted attendance and resolved 
-                      </span>
-                      <span>
-                        │   │   logistical issues
+                        │   │   UTSL Club Award nominations
                       </span>
                       <span>
                         │   │
                       </span>
                       <span>
-                        │   ├── Onboarded 25+ new members through clear
+                        │   ├── Organized 5 events with 15+ attendees 
                       </span>
                       <span>
-                        │   │   communication
+                        │   │   during the club&apos;s founding year 
                       </span>
                       <span>
                         │   │
                       </span>
                       <span>
-                        │   └── Provided real-time support to ensure
+                        │   └── Accelerated club growth by onboarding 
                       </span>
                       <span>
-                        │       smooth event flow
+                        │       25+ new members
                       </span>
                       │
                       </div>
@@ -686,42 +671,36 @@ export function ExperienceContentMobile() {
                         │   │
                       </span>
                       <span>
-                        │   ├── Organized events for 15+
+                        │   ├── Led event planning, 
                       </span>
                       <span>
-                        │   │   attendees while balancing
+                        │   │   contributing to 5 UTSL Club
                       </span>
                       <span>
-                        │   │   full-time studies
-                      </span>
-                      <span>
-                        │   │
-                      </span>
-                      <span>
-                        │   ├── Forecasted attendance and
-                      </span>
-                      <span>
-                        │   │   resolved logistical issues
+                        │   │   Award nominations
                       </span>
                       <span>
                         │   │
                       </span>
                       <span>
-                        │   ├── Onboarded 25+ new members
+                        │   ├── Organized 5 events with 15+ 
                       </span>
                       <span>
-                        │   │   through clear communication
+                        │   │   attendees during the club&apos;s
+                      </span>
+                      <span>
+                        │   │   founding year
                       </span>
                       <span>
                         │   │
                       </span>
                       <span>
-                        │   └── Provided real-time support to
+                        │   └── Accelerated club growth by 
                       </span>
                       <span>
-                        │       ensure smooth event flow
+                        │       onboarding 25+ new members
                       </span>
-                      │
+                        │
                       </div>
                     </FadeContent>
                     <FadeContent

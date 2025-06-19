@@ -79,7 +79,7 @@
     font-size: 1.1rem;
     font-family: var(--font-lucida);
     white-space: pre-wrap; /* preserve spacing and line breaks */
-    color: white; /* or your default text color */
+    color: #ffffff;
   }
   
   .jobTitle {

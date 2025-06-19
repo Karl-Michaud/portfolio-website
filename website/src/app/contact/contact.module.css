@@ -85,7 +85,7 @@
     font-family: var(--font-lucida);
     white-space: pre-wrap;
     font-size: 1.1rem;
-    color: white;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     gap: 0.2rem; /* optional */

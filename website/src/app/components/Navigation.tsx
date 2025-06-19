@@ -263,16 +263,6 @@ export default function Navigation() {
         >
           experience
         </Link>
-        <span>|</span>
-        <Link 
-          href="/#contact" 
-          onClick={(e) => scrollToSection(e, 'contact')}
-          className={activeSection === 'contact' ? styles.active : ''}
-        >
-          contact
-        </Link>
-        <span>|</span>
-        <Link href={PDF_URL} onClick={openResume}>resume</Link>
       </nav>
     </>
   );

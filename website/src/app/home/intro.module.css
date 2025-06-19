@@ -406,14 +406,14 @@
     
     .connect {
         color: var(--foreground);
-        opacity: 0.8;
+        opacity: 1;
         font-size: 0.8rem;
         margin-bottom: 1vh;
     }
 
     .connect2 {
         color: var(--foreground);
-        opacity: 0.8;
+        opacity: 1;
         font-size: 0.8rem;
         margin-bottom: 2vh;
     }
@@ -448,7 +448,7 @@
     
     .socialLink {
         color: var(--foreground);
-        opacity: 0.8;
+        opacity: 1;
         transition: opacity 0.2s ease, transform 0.2s ease;
         font-size: 1.5rem;
 
@@ -456,7 +456,7 @@
 
     .socialLink2 {
         color: var(--foreground);
-        opacity: 0.8;
+        opacity: 1;
         transition: opacity 0.2s ease, transform 0.2s ease;
         font-size: 1.4rem;
 

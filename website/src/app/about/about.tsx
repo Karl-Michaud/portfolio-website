@@ -134,7 +134,7 @@ export function AboutContentDesktop() {
 +------------------------------------------------------------------------------------------+<br />
 | <span className={styles.green}>frameworks:</span>      Node.js, Next.js, SwiftUI, Maven                                        |<br />
 +------------------------------------------------------------------------------------------+<br />
-| <span className={styles.green}>tools/databases:</span> Git / GitHub, MySQL, Firebase, Linux, OpenAI / DeepSeek API             |<br />
+| <span className={styles.green}>tools/databases:</span> Git / GitHub, MySQL, Firebase, Linux, OpenAI / DeepSeek API, Whisper    |<br />
 +------------------------------------------------------------------------------------------+<br />
                   </div> 
             </FadeContent>

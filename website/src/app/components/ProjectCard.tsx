@@ -8,6 +8,7 @@ interface ProjectCardProps {
   stack: string;
   summary: string;
   githubUrl: string;
+  docsUrl?: string;
   imageHeight?: number;  // optional height in pixels
   imageWidth?: number;   // optional width in pixels
 }
@@ -18,6 +19,7 @@ export default function ProjectCard({
   stack, 
   summary, 
   githubUrl,
+  docsUrl,
   imageHeight,
   imageWidth 
 }: ProjectCardProps) {
@@ -39,15 +41,27 @@ export default function ProjectCard({
       <div className={styles.projectContent}>
         <p className={styles.stack}>{stack}</p>
         <p className={styles.summary}>{summary}</p>
-        <a 
-          href={githubUrl}
-          target="_blank" 
-          rel="noopener noreferrer"
-          className={styles.githubLink}
-        >
-          <FaGithub />
-          view on github
-        </a>
+        <div className={styles.buttonRow}>
+          <a 
+            href={githubUrl}
+            target="_blank" 
+            rel="noopener noreferrer"
+            className={styles.githubLink}
+          >
+            <FaGithub />
+            view on github
+          </a>
+          {docsUrl && (
+            <a
+              href={docsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.githubLink}
+            >
+              📖 documentation
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

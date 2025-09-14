@@ -53,7 +53,7 @@ export function ProjectsContentDesktop() {
                 <button className={styles.button} onClick={() => handleClick(2)}>keycard-security-system</button>
               </div>
               <div className={styles.row}>
-                  <button className={styles.button} onClick={() => handleClick(3)}>portfolio</button>
+                  <button className={styles.button} onClick={() => handleClick(3)}>cexpress</button>
                   <button className={styles.button} onClick={() => handleClick(4)}>recyclobot-deltahacks</button>
                   <button className={styles.button} onClick={() => handleClick(5)}>talk-to-a-club</button>           
               </div>
@@ -156,7 +156,7 @@ export function ProjectsContentDesktop() {
                   <TypeAnimation
                     className={styles.terminalItem}
                     sequence={[
-                      './portfolio',
+                      './cexpress',
                       2300,
                     ]}
                     speed={70}
@@ -270,12 +270,13 @@ export function ProjectsContentDesktop() {
             >
               <div className={styles.height}>
                   <ProjectCard 
-                  imageSrc="/images/portfolio.png"
-                  imageAlt="portfolio preview"
-                  stack="React.js, Next.js, TypeScript, CSS"
-                  summary="Built this portfolio from scratch. You're on it!"
-                  githubUrl="https://github.com/Karl-Michaud/portfolio-website"
-                  imageHeight={200}
+                  imageSrc="/images/cexpress.png"
+                  imageAlt="CExpress preview"
+                  stack="C, Makefile"
+                  summary="Because C deserves frameworks as simple as Express.js"
+                  githubUrl="https://github.com/Karl-Michaud/CExpress"
+                  docsUrl="https://karl-michaud.github.io/CExpress/"
+                  imageHeight={250}
                   imageWidth={350}
                 />
               </div>
@@ -373,7 +374,7 @@ export function ProjectsContentTablet() {
                 <button className={styles.button} onClick={() => handleClick(2)}>keycard-security-system</button>
               </div>
               <div className={styles.row}>
-                  <button className={styles.button} onClick={() => handleClick(3)}>portfolio</button>
+                  <button className={styles.button} onClick={() => handleClick(3)}>cexpress</button>
                   <button className={styles.button2} onClick={() => handleClick(4)}>recyclobot-deltahacks</button>
                   <button className={styles.button} onClick={() => handleClick(5)}>talk-to-a-club</button>           
               </div>
@@ -476,7 +477,7 @@ export function ProjectsContentTablet() {
                   <TypeAnimation
                     className={styles.terminalItem}
                     sequence={[
-                      './portfolio',
+                      './cexpress',
                       2300,
                     ]}
                     speed={70}
@@ -590,12 +591,13 @@ export function ProjectsContentTablet() {
             >
               <div className={styles.height}>
                   <ProjectCard 
-                  imageSrc="/images/portfolio.png"
-                  imageAlt="portfolio preview"
-                  stack="React.js, Next.js, TypeScript, CSS"
-                  summary="Built this portfolio from scratch. You're on it!"
-                  githubUrl="https://github.com/Karl-Michaud/portfolio-website"
-                  imageHeight={200}
+                  imageSrc="/images/cexpress.png"
+                  imageAlt="CExpress preview"
+                  stack="C"
+                  summary="Because C deserves frameworks as simple as Express.js"
+                  githubUrl="https://github.com/Karl-Michaud/CExpress"
+                  docsUrl="https://karl-michaud.github.io/CExpress/"
+                  imageHeight={250}
                   imageWidth={350}
                 />
               </div>
@@ -693,7 +695,7 @@ export function ProjectsContentMobileMed() {
               </div>
               <div className={styles.row2}>
                 <button className={styles.button} onClick={() => handleClick(2)}>nfc-security-system</button>
-                <button className={styles.button} onClick={() => handleClick(3)}>portfolio</button>
+                <button className={styles.button} onClick={() => handleClick(3)}>cexpress</button>
               </div>
               <div className={styles.row}>
                   
@@ -799,7 +801,7 @@ export function ProjectsContentMobileMed() {
                   <TypeAnimation
                     className={styles.terminalItem}
                     sequence={[
-                      './portfolio',
+                      './cexpress',
                       2300,
                     ]}
                     speed={70}
@@ -913,12 +915,13 @@ export function ProjectsContentMobileMed() {
             >
               <div className={styles.height}>
                   <ProjectCard 
-                  imageSrc="/images/portfolio.png"
-                  imageAlt="portfolio preview"
-                  stack="React.js, Next.js, TypeScript, CSS"
-                  summary="Built this portfolio from scratch. You're on it!"
-                  githubUrl="https://github.com/Karl-Michaud/portfolio-website"
-                  imageHeight={200}
+                  imageSrc="/images/cexpress.png"
+                  imageAlt="CExpress preview"
+                  stack="C"
+                  summary="Because C deserves frameworks as simple as Express.js"
+                  githubUrl="https://github.com/Karl-Michaud/CExpress"
+                  docsUrl="https://karl-michaud.github.io/CExpress/"
+                  imageHeight={250}
                   imageWidth={350}
                 />
               </div>
@@ -1016,7 +1019,7 @@ export function ProjectsContentMobile() {
               </div>
               <div className={styles.row2}>
                 <button className={styles.button} onClick={() => handleClick(2)}>keycard-auth</button>
-                <button className={styles.button} onClick={() => handleClick(3)}>portfolio</button>
+                <button className={styles.button} onClick={() => handleClick(3)}>cexpress</button>
               </div>
               <div className={styles.row}>
                   
@@ -1122,7 +1125,7 @@ export function ProjectsContentMobile() {
                   <TypeAnimation
                     className={styles.terminalItem}
                     sequence={[
-                      './portfolio',
+                      './cexpress',
                       2300,
                     ]}
                     speed={70}
@@ -1219,7 +1222,7 @@ export function ProjectsContentMobile() {
                   stack="Python, HTML/CSS, JavaScript, MySQL, Raspberry Pi"
                   summary="Led the development of a keycard system to raise awareness about school security, with remote user management through a custom web portal."
                   githubUrl="https://github.com/Karl-Michaud/NFC-reader"
-                  imageHeight={200}
+                  imageHeight={300}
                   imageWidth={300}
                 />
                 
@@ -1236,12 +1239,13 @@ export function ProjectsContentMobile() {
             >
               <div className={styles.height}>
                   <ProjectCard 
-                  imageSrc="/images/portfolio.png"
-                  imageAlt="portfolio preview"
-                  stack="React.js, Next.js, TypeScript, CSS"
-                  summary="Built this portfolio from scratch. You're on it!"
-                  githubUrl="https://github.com/Karl-Michaud/portfolio-website"
-                  imageHeight={200}
+                  imageSrc="/images/cexpress.png"
+                  imageAlt="CExpress preview"
+                  stack="C"
+                  summary="Because C deserves frameworks as simple as Express.js"
+                  githubUrl="https://github.com/Karl-Michaud/CExpress"
+                  docsUrl="https://karl-michaud.github.io/CExpress/"
+                  imageHeight={230}
                   imageWidth={300}
                 />
               </div>

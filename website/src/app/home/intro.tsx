@@ -6,7 +6,7 @@ import styles from './intro.module.css';
 import DecryptedText from './decrypted_text';
 import { FaLinkedin, FaGithub, FaEnvelope, FaFileAlt } from 'react-icons/fa';
 
-const PDF_URL = "/Karl-Alexandre_Michaud_Resume_Aug_19.pdf";
+const PDF_URL = "/Karl-Alexandre_Michaud_Resume_Sep17.pdf";
 
 const AnimationSpeed: number = 50;
 

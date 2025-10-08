@@ -6,7 +6,7 @@ import styles from './intro.module.css';
 import DecryptedText from './decrypted_text';
 import { FaLinkedin, FaGithub, FaEnvelope, FaFileAlt } from 'react-icons/fa';
 
-const PDF_URL = "/Karl-Alexandre_Michaud_Resume_Oct_2.pdf";
+const PDF_URL = "/Karl-Alexandre_Michaud_Resume_Oct8.pdf";
 
 const AnimationSpeed: number = 50;
 
@@ -228,7 +228,7 @@ const IntroContentSmall= () => {
             <p className={styles.connect2}>p.s., best experienced in full-screen on a computer!</p>
             <div className={styles.socialLinks}>
                 <a 
-                    href={PDF_URL}
+                    href="https://www.linkedin.com/in/karlmichaud/"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className={styles.socialLink}
@@ -250,7 +250,7 @@ const IntroContentSmall= () => {
                     <FaEnvelope />
                 </a>
                 <a
-                    href="/Karl-Alexandre_Michaud_Resume_Aug_19.pdf"
+                    href={PDF_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.socialLink2}
